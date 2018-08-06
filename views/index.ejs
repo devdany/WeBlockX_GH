@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="full-container">
+          <h1 class="logo">
+            <a href="#" title="세계속의 경기도 홈페이지 바로가기 링크">
+              <img src="/images/logo.png" alt="세계속의 경기도 로고"/>
+            </a>
+          </h1> <!--END logo-->
+
+          <div class="contents">
+            <div class="main_txt">
+              <h2 class="main_title">새로운 경기 <span class="dot">함</span><span class="dot">께</span> 시작합니다</h2>
+              <p class="main_desc">새로운 경기! <strong class="main_strong">1300만 도민과 함께</strong>시작하겠습니다.</p>
+            </div> <!-- END main_txt-->
+            <h2 class="main_txt">새로운 경기 함께 시작합니다</h2>
+          </div> <!-- END contents-->
+
+        </div> <!-- END full-container-->
+      </header> <!-- END header-->
+
+      <main class="main">
+
+        <div class="gnbbox">
+          <div class="container">
+            <nav class="gnb_innerbox">
+              <h2 class="hidden">세계속의 경기도 주요메뉴</h2>
+              <div class="hidden_menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div> <!-- END hidden_menu-->
+
+              <ul class="gnb">
+                <li>
+                  <a href="#" title="민원올리기 메뉴 바로가기 링크">민원 올리기</a>
+                </li>
+                <li>
+                  <a href="#" title="실시간 처리 보기 메뉴 바로가기 링크">실시간 처리 보기</a>
+                </li>
+                <li>
+                  <a href="#" title="이웃 알리미 메뉴 바로가기 링크">이웃 알리미</a>
+                </li>
+                <li>
+                  <a href="#" title="토큰 모으기 메뉴 바로가기 링크">토큰 모으기</a>
+                </li>
+                <li>
+                  <a href="#" title="나눔 더하기 메뉴 바로가기 링크">나눔 더하기</a>
+                </li>
+              </ul> <!-- END gnb-->
+
+              <div class="search_box">
+                <button class="search_btn" title="버튼을 누르면 검색기능이 나옵니다." type="button"></button>
+              </div> <!-- END search_box-->
+
+            </nav> <!-- END gnbbox-->
+          </div> <!-- END container-->
+        </div> <!-- END gnbbox-->
+
+        <section class="visual">
+          <div class="container">
+            <article class="a4 a41">
+              <div class="btn_box">
+                <button class="btn minwon_btn">
+                  <span class="icon icon1"></span>
+                  민원 올리기
+                </button>
+              </div> <!-- END btn_box-->
+            </article> <!-- END a4 a41-->
+
+            <article class="a4 a42">
+              <div class="btn_box">
+                <a href="#" title="실시간 처리 보기 링크" class="live_btn">
+                  <span class="icon icon2"></span>
+                  실시간<br/>처리 보기
+                </a>
+              </div> <!-- END btn_box-->
+            </article> <!-- END a4 a42-->
+
+            <article class="a4 a43">
+              <p class="desc">투명하고 긍정하게<br/>도민의 불편을 해결합니다!</p>
+            </article> <!-- END a4 a43-->
+
+            <article class="a4 a44">
+              <div class="btn_box">
+                <a href="#" title="이웃 알리미 바로가기 링크" class="info_btn">
+                  <span class="icon icon3"></span>
+                  이웃 알리미
+                </a>
+
+                <a href="#" title="토큰 모으기 바로가기 링크" class="token_btn">
+                  <span class="icon icon4"></span>
+                  토큰 모으기
+                </a>
+
+                <a href="#" title="나눔 더하기 바로가기 링크" class="plus_btn">
+                  <span class="icon icon5"></span>
+                  나눔 더하기
+                </a>
+              </div> <!-- END btn_box-->
+            </article> <!-- END a4 a44-->
+          </div> <!-- END container-->
+        </section> <!-- END visual-->
+
+        <section class="m_content mc1">
+          <div class="container">
+            <article class="a3 a31">
+              <div class="icon icon6"></div>
+              <a href="#" title="경기도 토큰의 사용처 더보기 링크" class="more_btn">&gt;더보기</a>
+              <p class="article_desc">
+                경기도 토큰의 다양한 사용처를 둘러보세요.<br/>
+                물건을 살 수도, 문화를 즐길 수도, 어려운 이웃을<br/>
+                도울 수 있어요!
+              </p> <!-- END article_Desc-->
+            </article> <!-- END a3 a31-->
+
+            <article class="a3 a32">
+              <div class="icon icon7"></div>
+              <a href="#" title="경기도가 해결한 일 응원하기 더보기 링크" class="more_btn">&gt;더보기</a>
+              <p class="article_desc">
+                경기도가 해결한 여러 일들을 내손으로 직접 응원<br/>
+                해보세요 응원의 힘이 모이면 토큰으로<br/>
+                돌아옵니다!
+              </p> <!-- END article_Desc-->
+            </article> <!-- END a3 a31-->
+
+            <article class="a3 a33">
+              <div class="icon icon8"></div>
+              <a href="#" title="이웃들의 소식 듣기  더보기 링크" class="more_btn">&gt;더보기</a>
+              <p class="article_desc">
+                도움의 손길이 닿은 우리 이웃들의 소식을<br/>
+                들어보세요. 더 커져가는 나눔의 기쁨을 경기도가<br/>
+                합께합니다.
+              </p> <!-- END article_Desc-->
+            </article> <!-- END a3 a31-->
+          </div> <!-- END container-->
+        </section> <!-- END m_content mc1-->
+      </main> <!-- END main-->
+
+      <footer class="footer">
+        <div class="container">
+        </div> <!-- END container-->
+      </footer> <!-- END footer-->
+    </div> <!-- END wrapper-->
   </body>
 </html>
