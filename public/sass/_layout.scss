@@ -1,0 +1,46 @@
+@import "reset";
+@import "various";
+
+//////
+
+.full-container{
+  width:100%;
+  position:relative;
+}
+
+.container{
+  width: 980px;
+  margin: auto;
+  position: relative;
+}
+
+body{
+  font-family: $font-family;
+}
+
+.main_title,
+.main_strong{
+  font-family: 'medium_font';
+}
+
+.btn,
+.a43 > .desc{
+  font-family: 'v_font';
+}
+
+.hidden{
+  @include hidden();
+}
+
+.wrapper{
+  background-image:url('../images/bg.png');
+  width:100%;
+  position: relative;
+  min-height: 100vh;
+  min-width: 980px;
+  overflow: auto;
+}
+
+.btn{
+  font-size: map_get($use-font, medium-f);
+}

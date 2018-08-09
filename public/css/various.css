@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'light_font';
+  src: url("../lib/font/woff/Title_Light.woff"); }
+
+@font-face {
+  font-family: 'medium_font';
+  src: url("../lib/font/woff/Title_Medium.woff"); }
+
+@font-face {
+  font-family: 'v_font';
+  src: url("../lib/font/woff/TitleV.woff"); }
+
+@font-face {
+  font-family: 'blod_font';
+  src: url("../lib/font/woff/Title_Bold.woff"); }
+
+@font-face {
+  font-family: 'batang_b';
+  src: url("../lib/font/woff/Batang_Bold.woff"); }
+
+@font-face {
+  font-family: 'batang_r';
+  src: url("../lib/font/woff/Batang_Regular.woff"); }

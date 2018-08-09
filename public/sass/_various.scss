@@ -1,0 +1,146 @@
+
+/// font
+@font-face {
+  font-family: 'light_font';
+  src: url('../lib/font/woff/Title_Light.woff');
+}
+
+@font-face {
+  font-family: 'medium_font';
+  src: url('../lib/font/woff/Title_Medium.woff');
+}
+
+@font-face {
+  font-family: 'v_font';
+  src: url('../lib/font/woff/TitleV.woff');
+}
+
+@font-face {
+  font-family: 'bold_font';
+  src: url('../lib/font/woff/Title_Bold.woff');
+}
+
+@font-face {
+  font-family: 'batang_b';
+  src: url('../lib/font/woff/Batang_Bold.woff');
+}
+
+@font-face {
+  font-family: 'batang_r';
+  src: url('../lib/font/woff/Batang_Regular.woff');
+}
+
+
+/// 변수
+$use-color: (
+        blue-c: #0266be,
+        black-c: #606060,
+        strong-c: #151515 ,
+        gnb-c: #407aff ,
+        btn1-c: #ffe400,
+        btn2-c: #76f354 ,
+        btn3-c: #b2aaff ,
+        footer-bg: rgba(27, 92, 158, 0.5),
+        border-c: #0059ac,
+        title-c: #000000 ,
+        footer2-bg: #977fb2,
+        white-c: #ffffff
+);
+
+$use-font: (
+        xsmall6-f:0.6rem,
+        xsmall5-f:0.7rem,
+        xsmall4-f:0.75rem,
+        xsmall-f:0.8rem,
+        xsmall2-f:0.9rem,
+        xsmall3-f:1.0rem,
+        small-f:1.1rem,
+        medium2-f:1.3rem,
+        medium-f:1.6rem,
+        large-f:1.9rem,
+        large2-f:2.2rem,
+        mlarge-f: 2.8rem,
+        xlarge-f:4rem
+);
+
+$line-height: (
+        xs_line-h: 0.8rem,
+        s_line-h:1rem,
+        m_line-h: 1.2rem,
+        l_line-h: 1.5rem,
+        xl_line-h: 1.8rem
+);
+
+$font-family: 'light_font', sans-serif;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+$box-shadow2: 2px 1px 4px rgba(0, 0, 0, 0.2);
+$box-shadow3: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin hidden() {
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -9999%;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+@mixin form-style() {
+  border: 0;
+  background-color: map_get($use-color, white-c);
+  color: map_get($use-color, black-c);
+  padding-left:5px;
+  height:38px;
+  line-height: 38px;
+}
+
+@mixin basic-icon(){
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+@mixin btn-style($btn) {
+  @if $btn == basic{
+    border-radius: 10px;
+    border: 1px solid map_get($use-color, white-c);
+  }
+  @else if $btn == submit{
+    border: none;
+    background-color: map_get($use-color, hover-c);
+    border-radius: 0;
+    text-align: center;
+    padding:0.5rem 1.5rem;
+    color: map_get($use-color, white-c);
+    cursor: pointer;
+  }
+}
+
+@mixin basic-padding($p_set){
+  padding-top: $p_set;
+  padding-bottom: $p_set;
+}
+
+@mixin basic-margin($m_set){
+  margin-top: $m_set;
+  margin-bottom: $m_set;
+}
+
+@mixin all-padding($p_set1, $p_set2){
+  padding: $p_set1 $p_set2;
+}
+
+@mixin all-margin($m_set1, $m_set2){
+  margin: $m_set1 $m_set2;
+}
