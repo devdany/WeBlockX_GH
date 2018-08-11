@@ -1,0 +1,138 @@
+.sub_page{
+
+  .gnbbox{
+    .gnb_innerbox{
+      border-bottom-color: map_get($use-color, strong-c);
+    }
+    .hidden_menu{
+      .line{
+        background-color: map_get($use-color, strong-c);
+      }
+    }
+    .gnb{
+      li{
+        a:link,
+        a:visited{
+          color: map_get($use-color, strong-c);
+        }
+      }
+    }
+  }
+
+  .sub_btn_box{
+    position:absolute;
+    right:0;
+    top:40px;
+
+    .btn{
+      width:120px;
+      height: 120px;
+      font-size: map_get($use-font, small-f);
+      background-color: map_get($use-color, btn3-c);
+      text-align: center;
+      margin-bottom:20px;
+      display: block;
+      color: map-get($use-color, white-c);
+      @include btn-style(basic);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .icon{
+      width: 65px;
+      height: 65px;
+      margin: auto;
+      padding-top:20px;
+      padding-bottom:10px;
+      @include basic-icon();
+      display: block;
+    }
+
+    .icon1{
+      background-image: url('../images/sub/r-icon1.png');
+    }
+
+    .icon2{
+      background-image: url('../images/sub/r-icon2.png');
+    }
+
+    .icon3{
+      background-image: url('../images/sub/r-icon3.png');
+    }
+
+    .icon4{
+      background-image: url('../images/sub/r-icon4.png');
+    }
+  }
+
+  .left_content{
+    @include basic-padding(2rem);
+
+    .s_content{
+      padding-bottom:3rem;
+    }
+
+    .sc1{
+      position:relative;
+    }
+
+    .web_block{
+      display: block;
+    }
+
+    .block_btn{
+      position:absolute;
+      right:0;
+      top:-50px;
+
+      .sc1_btn{
+        border: 1px solid map_get($use-color, border-c);
+        border-radius: 30px;
+        font-family: 'light_font';
+        @include all-padding(0.5rem, 0.8rem);
+        cursor: pointer;
+        font-size: map_get($use-font, xsmall-f);
+      }
+      .sc1_btn2{
+        margin-left:0.3rem;
+      }
+    }
+  }
+
+
+  .s_title{
+    font-family: 'bold_font';
+    font-size: map_get($use-font, medium2-f);
+    border-left: 5px solid map_get($use-color, border-c);
+    padding-left:10px;
+    @include basic-padding(0.3rem);
+    margin-bottom:1.5rem;
+  }
+
+  .minwon_table_box{
+    width:800px;
+    position:relative;
+  }
+
+  .table{
+    border-collapse: collapse;
+    width: 100%;
+    thead{
+      border-bottom: 1px solid map_get($use-color, strong-c);
+    }
+    th,
+    td{
+      padding-bottom:10px;
+      margin-bottom:10px;
+      text-align: center;
+      padding-top:10px;
+    }
+  }
+  .purple_line {
+    width: 100%;
+    background-color: map_get($use-color, footer2-bg);
+    height:50px;
+    margin-bottom:3rem;
+    margin-top:2rem;
+  }
+}

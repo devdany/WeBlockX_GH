@@ -33,14 +33,18 @@ body{
 }
 
 .wrapper{
-  background-image:url('../images/bg.png');
-  width:100%;
   position: relative;
-  min-height: 100vh;
   min-width: 980px;
   overflow: auto;
 }
 
 .btn{
   font-size: map_get($use-font, medium-f);
+}
+
+.main_page{
+  background-image:url('../images/bg.png');
+  width:100%;
+  min-height: 100vh;
+  padding-bottom:3rem;
 }
