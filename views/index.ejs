@@ -2,44 +2,10 @@
           <% include ./include/header.ejs %>
       <main class="main main_page">
 
-        <div class="gnbbox">
-          <div class="container">
-            <nav class="gnb_innerbox">
-              <h2 class="hidden">세계속의 경기도 주요메뉴</h2>
-              <div class="hidden_menu">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div> <!-- END hidden_menu-->
-
-              <ul class="gnb">
-                <li>
-                  <a href="/minwon" title="민원올리기 메뉴 바로가기 링크">민원 올리기</a>
-                </li>
-                <li>
-                  <a href="/live" title="실시간 처리 보기 메뉴 바로가기 링크">실시간 처리 보기</a>
-                </li>
-                <li>
-                  <a href="#" title="이웃 알리미 메뉴 바로가기 링크">이웃 알리미</a>
-                </li>
-                <li>
-                  <a href="#" title="토큰 모으기 메뉴 바로가기 링크">토큰 모으기</a>
-                </li>
-                <li>
-                  <a href="#" title="나눔 더하기 메뉴 바로가기 링크">나눔 더하기</a>
-                </li>
-              </ul> <!-- END gnb-->
-
-              <div class="search_box">
-                <button class="search_btn" title="버튼을 누르면 검색기능이 나옵니다." type="button"></button>
-              </div> <!-- END search_box-->
-
-            </nav> <!-- END gnbbox-->
-          </div> <!-- END container-->
-        </div> <!-- END gnbbox-->
+         <% include ./include/gnb.ejs%>
 
         <section class="visual">
-          <div class="container">
+          <div class="container_980">
             <div class="btn_big_box">
               <article class="a4 a41">
                 <div class="btn_box">
@@ -86,7 +52,7 @@
         </section> <!-- END visual-->
 
         <section class="m_content mc1">
-          <div class="container">
+          <div class="container_980">
             <div class="article_box">
               <article class="a3 a31">
                 <div class="icon icon6"></div>

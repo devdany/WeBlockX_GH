@@ -15,3 +15,12 @@ router.get('/minwon', function(req, res, next){
 router.get('/live', function(req, res, next){
     res.render('sub_live', {title: 'Live | WeBlockX'})
 });
+
+router.get('/list', function(req, res, next){
+    res.render('table_list', {title: 'list | WeBlockX'})
+});
+
+router.get('/list/detail', function(req, res, next){
+    res.render('sub_detail', {title: 'Live | WeBlockX'})
+});
+
