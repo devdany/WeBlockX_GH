@@ -1,0 +1,154 @@
+
+          <% include ./include/header.ejs %>
+        <main class="main sub_page">
+
+          <div class="gnbbox">
+            <div class="container">
+              <nav class="gnb_innerbox">
+                <h2 class="hidden">세계속의 경기도 주요메뉴</h2>
+                <div class="hidden_menu">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div> <!-- END hidden_menu-->
+
+                <ul class="gnb">
+                  <li>
+                    <a href="#" title="민원올리기 메뉴 바로가기 링크">민원 올리기</a>
+                  </li>
+                  <li>
+                    <a href="#" title="실시간 처리 보기 메뉴 바로가기 링크">실시간 처리 보기</a>
+                  </li>
+                  <li>
+                    <a href="#" title="이웃 알리미 메뉴 바로가기 링크">이웃 알리미</a>
+                  </li>
+                  <li>
+                    <a href="#" title="토큰 모으기 메뉴 바로가기 링크">토큰 모으기</a>
+                  </li>
+                  <li>
+                    <a href="#" title="나눔 더하기 메뉴 바로가기 링크">나눔 더하기</a>
+                  </li>
+                </ul> <!-- END gnb-->
+
+                <div class="search_box">
+                  <button class="search_btn" title="버튼을 누르면 검색기능이 나옵니다." type="button"></button>
+                </div> <!-- END search_box-->
+
+              </nav> <!-- END gnbbox-->
+            </div> <!-- END container-->
+          </div> <!-- END gnbbox-->
+
+          <div class="sub_inner_box">
+            <div class="container">
+
+              <div class="left_content">
+                <section class="s_content sc1">
+                  <h3 class="s_title">민원 신청</h3>
+
+                  <form class="minwon_form">
+
+                    <div class="input_table_box">
+                      <table class="table input_table">
+                        <colgroup>
+                          <col span="1" style="width:15%"/>
+                          <col span="2" style="width:85%;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                          <th>신청인 구분</th>
+                          <td>
+                            <div class="form_box">
+                              <input type="radio" value="person" id="one_person"/>
+                              <label for="one_person">개인</label>
+                            </div>
+
+                            <div class="form_box">
+                              <input type="radio" value="person" id="two_more"/>
+                              <label for="two_more">단체</label>
+                            </div> <!-- END form_box-->
+
+                            <div class="form_box">
+                              <input type="radio" value="person" id="company"/>
+                              <label for="company">기관</label>
+                            </div>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>신청인 ID</th>
+                          <td>
+                            <input type="text" class="person_id">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="v_top">민원 내용</span>
+                          </th>
+                          <td>
+                            <textarea rows="4" cols="50" class="minwon_txt"></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>처리 정보 받기</th>
+                          <td>
+                            <div class="form_box">
+                              <input type="checkbox" value="info_send" id="email_send"/>
+                              <label for="email_send">상세내용 이메일 받기</label>
+                            </div>
+
+                            <div class="form_box">
+                              <input type="checkbox" value="info_send" id="sns_send"/>
+                              <label for="sns_send">SNS문자 안내</label>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table> <!-- END minwon_table-->
+                    </div> <!-- END minwon_table_box-->
+                    <div class="min_btn_box">
+                      <button type="submit" class="submit_btn">민원 올리기</button>
+                    </div> <!-- END min_btn_box-->
+
+                  </form>
+                </section> <!-- END sc1-->
+              </div> <!-- END left_content-->
+
+              <div class="sub_btn_box">
+                <div class="btn_box">
+
+                  <a class="btn minwon_btn">
+                    <span class="icon icon1"></span>
+                    민원 올리기
+                  </a>
+
+                  <a href="#" title="실시간 처리 보기 링크" class="btn live_btn">
+                  <span class="icon icon2"></span>
+                  실시간<br/>처리 보기
+                  </a>
+
+                  <a href="#" title="이웃 알리미 바로가기 링크" class="btn info_btn">
+                    <span class="icon icon2"></span>
+                    이웃 알리미
+                  </a>
+
+                  <a href="#" title="토큰 모으기 바로가기 링크" class="btn token_btn">
+                    <span class="icon icon3"></span>
+                    토큰 모으기
+                  </a>
+
+                  <a href="#" title="나눔 더하기 바로가기 링크" class="btn plus_btn">
+                    <span class="icon icon4"></span>
+                    나눔 더하기
+                  </a>
+
+                </div> <!-- END btn_box-->
+              </div> <!-- END sub_btn_box-->
+
+            </div> <!-- END container-->
+          </div> <!-- END sub_inner_box-->
+
+          <div class="purple_line"></div>
+
+      </main> <!-- END main-->
+
+          <% include ./include/footer.ejs %>

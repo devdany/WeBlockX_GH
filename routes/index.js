@@ -9,5 +9,9 @@ router.get('/', function(req, res, next) {
 module.exports = router;
 
 router.get('/minwon', function(req, res, next){
-  res.render('sub_live', {title: 'Minwon | WeBlockX'})
+    res.render('sub_minwon', {title: 'Minwon | WeBlockX'})
+});
+
+router.get('/live', function(req, res, next){
+    res.render('sub_live', {title: 'Live | WeBlockX'})
 });

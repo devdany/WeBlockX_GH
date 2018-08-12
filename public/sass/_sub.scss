@@ -19,6 +19,8 @@
     }
   }
 
+
+  /////sub_btn_box
   .sub_btn_box{
     position:absolute;
     right:0;
@@ -28,9 +30,8 @@
       width:120px;
       height: 120px;
       font-size: map_get($use-font, small-f);
-      background-color: map_get($use-color, btn3-c);
       text-align: center;
-      margin-bottom:20px;
+      margin-bottom:10px;
       display: block;
       color: map-get($use-color, white-c);
       @include btn-style(basic);
@@ -38,11 +39,36 @@
       cursor: pointer;
     }
 
+    .minwon_btn{
+      background-color: map_get($use-color, s_btn1-c);
+    }
+
+    .live_btn{
+      background-color: map_get($use-color, s_btn2-c);
+    }
+
+
+    .info_btn{
+      background-color: map_get($use-color, s_btn3-c);
+    }
+
+
+    .token_btn{
+      background-color: map_get($use-color, s_btn4-c);
+    }
+
+
+    .plus_btn{
+      background-color: map_get($use-color, s_btn5-c);
+    }
+
+
+
     .icon{
       width: 65px;
       height: 65px;
       margin: auto;
-      padding-top:20px;
+      padding-top:10px;
       padding-bottom:10px;
       @include basic-icon();
       display: block;
@@ -54,6 +80,7 @@
 
     .icon2{
       background-image: url('../images/sub/r-icon2.png');
+      padding-top:5px;
     }
 
     .icon3{
@@ -63,7 +90,12 @@
     .icon4{
       background-image: url('../images/sub/r-icon4.png');
     }
+
+    .icon5{
+      background-image: url('../images/sub/r-icon5.png');
+    }
   }
+  /////finish sub_btn_Box
 
   .left_content{
     @include basic-padding(2rem);
@@ -130,9 +162,69 @@
   }
   .purple_line {
     width: 100%;
-    background-color: map_get($use-color, footer2-bg);
-    height:50px;
+    background-image:url('../images/bg.png');
+    height:45px;
     margin-bottom:3rem;
-    margin-top:2rem;
+    margin-top:9rem;
+  }
+}
+
+//////input_table
+.form_box{
+  display: inline-block;
+  padding-right:1rem;
+}
+
+.input_table_box{
+  width: 800px;
+  margin-top:3rem;
+}
+.input_table{
+  width:100%;
+  th,
+  td{
+    text-align: left!important;
+  }
+  td{
+    text-align: left;
+  }
+
+  .person_id{
+    width: 80%;
+    border:0;
+    background-color: #eeeeee;
+    height: 30px;
+    outline: none;
+    padding-left:15px;
+  }
+
+  .minwon_txt{
+    border: 1px solid #eee;
+    width: 80%;
+    height: 135px;
+    overflow-y:auto;
+    outline:none;
+    padding-left:15px;
+    padding-top:15px;
+    display: block;
+  }
+
+  .v_top{
+    vertical-align: top;
+  }
+}
+
+.min_btn_box{
+  width: 800px;
+  margin-top:3rem;
+  text-align: center;
+  .submit_btn{
+    border:none;
+    border-radius: 17px;
+    background-color: map_get($use-color, gnb-c);
+    padding:0.5rem 1.5rem;
+    font-size: map_get($use-font, xsmall3-f);
+    color: map_get($use-color, white-c);
+    font-family: light_font;
   }
 }
