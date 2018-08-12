@@ -17,6 +17,9 @@ userModel.sync({force: false});
 complainModel.hasOne(feedbackModel, {foreignKey: 'complain_no'})
 feedbackModel.belongsTo(complainModel, {foreignKey: 'complain_no'})
 
+userModel.hasOne(feedbackModel, {foreignKey: 'user_no'})
+feedbackModel.belongsTo(userModel, {foreignKey: 'user_no'})
+
 userModel.hasMany(complainModel, {foreignKey:'user_no'})
 complainModel.belongsTo(userModel, {foreignKey:'user_no'})
 

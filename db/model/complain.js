@@ -42,6 +42,10 @@ const complain = connector.define('COMPLAIN', {
     ex_sp: {
         type: Sequelize.DOUBLE,
         allowNull: true
+    },
+    title: {
+        type: Sequelize.STRING,
+        allowNull: false
     }
 },{
     freezeTableName: true,

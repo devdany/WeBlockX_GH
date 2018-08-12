@@ -39,6 +39,10 @@ const user = connector.define('USER', {
         type: Sequelize.BOOLEAN,
         allowNull: true
     },
+    job : {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     last_login: {
         type: Sequelize.STRING,
         allowNull: true

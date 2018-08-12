@@ -1,6 +1,8 @@
 {
   "steem": {
     "user": "devdany",
+    "manager": "weblockx",
+    "managerPostPassword": "5JxKfZCBye6BHz22vSSqjQDk2XBUdjyNTZhgkZRZ3arNVFqXyA9",
     "postPassword": "5HzeV2obth1pBPtvfoXXE6TqZvNrkkbrKpeCQWEwBKLKaJ8m7Ci",
     "transferPassword": "P5JrbGJsasJYfUHM7QU8eRVUKZ9EuiA3wgfAP1hmJQzemeodGjVc",
     "tag" : "kk",
