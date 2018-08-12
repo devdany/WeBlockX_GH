@@ -348,20 +348,29 @@ body {
     width: 120px;
     height: 120px;
     font-size: 1.1rem;
-    background-color: #b2aaff;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
     color: #ffffff;
     border-radius: 10px;
     border: 1px solid #ffffff;
     text-decoration: none;
     cursor: pointer; }
+  .sub_page .sub_btn_box .minwon_btn {
+    background-color: #a0e13a; }
+  .sub_page .sub_btn_box .live_btn {
+    background-color: #73ca9b; }
+  .sub_page .sub_btn_box .info_btn {
+    background-color: #43c8d4; }
+  .sub_page .sub_btn_box .token_btn {
+    background-color: #60bde7; }
+  .sub_page .sub_btn_box .plus_btn {
+    background-color: #b3abdb; }
   .sub_page .sub_btn_box .icon {
     width: 65px;
     height: 65px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
     background-repeat: no-repeat;
@@ -371,11 +380,14 @@ body {
   .sub_page .sub_btn_box .icon1 {
     background-image: url("../images/sub/r-icon1.png"); }
   .sub_page .sub_btn_box .icon2 {
-    background-image: url("../images/sub/r-icon2.png"); }
+    background-image: url("../images/sub/r-icon2.png");
+    padding-top: 5px; }
   .sub_page .sub_btn_box .icon3 {
     background-image: url("../images/sub/r-icon3.png"); }
   .sub_page .sub_btn_box .icon4 {
     background-image: url("../images/sub/r-icon4.png"); }
+  .sub_page .sub_btn_box .icon5 {
+    background-image: url("../images/sub/r-icon5.png"); }
 
 .sub_page .left_content {
   padding-top: 2rem;
@@ -427,7 +439,7 @@ body {
 
 .sub_page .purple_line {
   width: 100%;
-  background-color: #977fb2;
-  height: 50px;
+  background-image: url("../images/bg.png");
+  height: 45px;
   margin-bottom: 3rem;
-  margin-top: 2rem; }
+  margin-top: 8rem; }
