@@ -1,0 +1,16 @@
+{
+  "steem": {
+    "user": "devdany",
+    "postPassword": "5HzeV2obth1pBPtvfoXXE6TqZvNrkkbrKpeCQWEwBKLKaJ8m7Ci",
+    "transferPassword": "P5JrbGJsasJYfUHM7QU8eRVUKZ9EuiA3wgfAP1hmJQzemeodGjVc",
+    "tag" : "kk",
+    "jsonMetaData": {"tags": ["kk", "weblockx"]}
+  },
+  "db": {
+    "dbschema": "kk",
+    "username": "root",
+    "password": "rhkr1636",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

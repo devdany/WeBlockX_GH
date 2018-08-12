@@ -4,9 +4,28 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+const complainModel = require('./db/model/complain');
+const feedbackModel = require('./db/model/feedback');
+const userModel = require('./db/model/user');
+
+
+
+feedbackModel.sync({force: false});
+complainModel.sync({force: false});
+userModel.sync({force: false});
+
+complainModel.hasOne(feedbackModel, {foreignKey: 'complain_no'})
+feedbackModel.belongsTo(complainModel, {foreignKey: 'complain_no'})
+
+userModel.hasMany(complainModel, {foreignKey:'user_no'})
+complainModel.belongsTo(userModel, {foreignKey:'user_no'})
+
+
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const postRouter = require('./routes/post');
 
 var app = express();
 
@@ -28,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/post', postRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
