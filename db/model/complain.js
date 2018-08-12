@@ -46,6 +46,14 @@ const complain = connector.define('COMPLAIN', {
     title: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    type: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    feedbackInfo: {
+        type: Sequelize.STRING,
+        allowNull: true
     }
 },{
     freezeTableName: true,
