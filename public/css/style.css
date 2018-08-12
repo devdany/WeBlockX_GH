@@ -442,4 +442,51 @@ body {
   background-image: url("../images/bg.png");
   height: 45px;
   margin-bottom: 3rem;
-  margin-top: 8rem; }
+  margin-top: 9rem; }
+
+.form_box {
+  display: inline-block;
+  padding-right: 1rem; }
+
+.input_table_box {
+  width: 800px;
+  margin-top: 3rem; }
+
+.input_table {
+  width: 100%; }
+  .input_table th,
+  .input_table td {
+    text-align: left !important; }
+  .input_table td {
+    text-align: left; }
+  .input_table .person_id {
+    width: 80%;
+    border: 0;
+    background-color: #eeeeee;
+    height: 30px;
+    outline: none;
+    padding-left: 15px; }
+  .input_table .minwon_txt {
+    border: 1px solid #eee;
+    width: 80%;
+    height: 135px;
+    overflow-y: auto;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block; }
+  .input_table .v_top {
+    vertical-align: top; }
+
+.min_btn_box {
+  width: 800px;
+  margin-top: 3rem;
+  text-align: center; }
+  .min_btn_box .submit_btn {
+    border: none;
+    border-radius: 17px;
+    background-color: #407aff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: light_font; }

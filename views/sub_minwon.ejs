@@ -43,119 +43,74 @@
 
               <div class="left_content">
                 <section class="s_content sc1">
-                  <h3 class="s_title">민원 기본 정보</h3>
-                  <div class="minwon_table_box">
-                    <table class="table minwon_table">
-                      <thead>
-                      <tr>
-                        <th>최초 제안자</th>
-                        <th>제안 등록</th>
-                        <th>조치 단계</th>
-                        <th>처리 담당자</th>
-                        <th>관할 부서</th>
-                        <th>처리 예정일</th>
-                      </tr>
-                      </thead>
+                  <h3 class="s_title">민원 신청</h3>
 
-                      <tbody>
-                      <tr>
-                        <td>
-                        <span class="first_user">
-                          G014gh
-                        </span>
-                        </td>
-                        <td class="create_block">
-                        <span class="create_block">
-                          2018.08.14<br/>11:56:27
-                        </span>
-                        </td>
-                        <td>
-                        <span class="ing_block">
-                          현장 관할자 이관
-                        </span>
-                        </td>
-                        <td>
-                        <span class="admin">
-                          이명욱 사무관
-                        </span>
-                        </td>
-                        <td>
-                        <span class="admin_work">
-                          관할 부서
-                        </span>
-                        </td>
-                        <td>
-                        <span class="block_date">
-                          처리 예정일
-                        </span>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table> <!-- END minwon_table-->
+                  <form class="minwon_form">
 
-                    <div class="block_btn">
-                      <button type="button" class="sc1_btn sc1_btn1">블록정보로 조회하기</button>
-                      <button type="button" class="sc1_btn sc1_btn2">응원하기</button>
-                    </div> <!-- END black_Btn-->
-                  </div> <!-- END minwon_table_box-->
+                    <div class="input_table_box">
+                      <table class="table input_table">
+                        <colgroup>
+                          <col span="1" style="width:15%"/>
+                          <col span="2" style="width:85%;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                          <th>신청인 구분</th>
+                          <td>
+                            <div class="form_box">
+                              <input type="radio" value="person" id="one_person"/>
+                              <label for="one_person">개인</label>
+                            </div>
 
+                            <div class="form_box">
+                              <input type="radio" value="person" id="two_more"/>
+                              <label for="two_more">단체</label>
+                            </div> <!-- END form_box-->
+
+                            <div class="form_box">
+                              <input type="radio" value="person" id="company"/>
+                              <label for="company">기관</label>
+                            </div>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>신청인 ID</th>
+                          <td>
+                            <input type="text" class="person_id">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="v_top">민원 내용</span>
+                          </th>
+                          <td>
+                            <textarea rows="4" cols="50" class="minwon_txt"></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>처리 정보 받기</th>
+                          <td>
+                            <div class="form_box">
+                              <input type="checkbox" value="info_send" id="email_send"/>
+                              <label for="email_send">상세내용 이메일 받기</label>
+                            </div>
+
+                            <div class="form_box">
+                              <input type="checkbox" value="info_send" id="sns_send"/>
+                              <label for="sns_send">SNS문자 안내</label>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table> <!-- END minwon_table-->
+                    </div> <!-- END minwon_table_box-->
+                    <div class="min_btn_box">
+                      <button type="submit" class="submit_btn">민원 올리기</button>
+                    </div> <!-- END min_btn_box-->
+
+                  </form>
                 </section> <!-- END sc1-->
-                <section class="s_content sc2">
-
-                  <h3 class="s_title">민원 진행상황</h3>
-                  <div class="minwon_table_box">
-                    <table class="table ing_table">
-                      <thead>
-                      <tr>
-                        <th>일시</th>
-                        <th>정보 저장</th>
-                        <th>처리 현재</th>
-                        <th>담당자</th>
-                        <th>응원 참여자</th>
-                      </tr>
-                      </thead>
-
-                      <tbody>
-                      <tr>
-                        <td>
-                        <span class="b_date">
-                          18.08.17
-                        </span>
-                        </td>
-                        <td>
-                        <span class="b_save">
-                          TALKJFLENOLJFLADEOCAKLA
-                        </span>
-                        </td>
-                        <td>
-                        <span class="b_present">
-                          시설팀 현장 파견
-                        </span>
-                        </td>
-                        <td>
-                        <span class="b_admin">
-                          정대용
-                        </span>
-                        </td>
-                        <td>
-                        <span class="b_num">
-                          11 명
-                        </span>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table> <!-- END minwon_table-->
-                  </div> <!-- END minwon_table_box-->
-                </section> <!-- END sc1-->
-                <section class="s_content sc3">
-                  <h3 class="s_title">민원 문의</h3>
-                  <p class="s_desc">
-                    <span class="web_block">민원 처리 완료시간은 실제 현장에서의 조치 완료 시각과 차이가 있을 수 있습니다.</span>
-                    <span class="web_block">민원 진행 절차에 따른 정보 제공은 최초 민원자에게 발송되는 블록 정보로도 상세 확인이 가능합니다.</span>
-                    <span class="web_block">조회 및 응원 참여는 블록에 기록되는 시점으로부터 영구적으로 가능하며 수정,조작 되지 않습니다.</span>
-                    <span class="web_block">자세한 사항은 경기도 대표 전화 031-120 (연중무후 24시간)으로 문의 하실 수 있습니다.</span>
-                  </p>
-                </section> <!-- END sc3-->
               </div> <!-- END left_content-->
 
               <div class="sub_btn_box">
