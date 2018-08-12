@@ -127,7 +127,7 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 680px;
-  .container{
+  .container_980{
     height: 100%;
   }
   .btn_big_box{
@@ -308,3 +308,15 @@
     line-height: 1.2;
   }
 }
+
+/////table_list
+.table_list{
+  .m_data2{
+    a:link,
+    a:visited{
+      color: map_get($use-color, strong-c);
+      text-decoration: none;
+    }
+  }
+}
+

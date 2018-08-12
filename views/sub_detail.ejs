@@ -9,7 +9,7 @@
 
               <div class="left_content">
                 <section class="s_content sc1">
-                  <h3 class="s_title">민원 신청</h3>
+                  <h3 class="s_title">민원 보기</h3>
 
                   <form class="minwon_form">
 
@@ -21,29 +21,15 @@
                         </colgroup>
                         <tbody>
                         <tr>
-                          <th>신청인 구분</th>
+                          <th>민원 제목</th>
                           <td>
-                            <div class="form_box">
-                              <input type="radio" value="person" id="one_person"/>
-                              <label for="one_person">개인</label>
-                            </div>
-
-                            <div class="form_box">
-                              <input type="radio" value="person" id="two_more"/>
-                              <label for="two_more">단체</label>
-                            </div> <!-- END form_box-->
-
-                            <div class="form_box">
-                              <input type="radio" value="person" id="company"/>
-                              <label for="company">기관</label>
-                            </div>
-
+                            <input type="text" class="person_title" disabled="disabled">
                           </td>
                         </tr>
                         <tr>
                           <th>신청인 ID</th>
                           <td>
-                            <input type="text" class="person_id">
+                            <input type="text" class="person_id" disabled="disabled">
                           </td>
                         </tr>
                         <tr>
@@ -51,28 +37,29 @@
                             <span class="v_top">민원 내용</span>
                           </th>
                           <td>
-                            <textarea rows="4" cols="50" class="minwon_txt"></textarea>
+                            <textarea rows="4" cols="50" class="minwon_txt" disabled="disabled"></textarea>
                           </td>
                         </tr>
                         <tr>
-                          <th>처리 정보 받기</th>
+                          <th>
+                            <span class="v_top">댓글 달기</span>
+                          </th>
                           <td>
-                            <div class="form_box">
-                              <input type="checkbox" value="info_send" id="email_send"/>
-                              <label for="email_send">상세내용 이메일 받기</label>
-                            </div>
-
-                            <div class="form_box">
-                              <input type="checkbox" value="info_send" id="sns_send"/>
-                              <label for="sns_send">SNS문자 안내</label>
-                            </div>
+                            <textarea rows="4" cols="50" class="reply_txt" disabled="disabled"></textarea>
+                            <button type="button" class="reply_btn">댓글 달기</button>
                           </td>
                         </tr>
                         </tbody>
                       </table> <!-- END minwon_table-->
+
+                      <div class="reply_box">
+
+                      </div> <!-- END reply_box-->
+
                     </div> <!-- END minwon_table_box-->
                     <div class="min_btn_box">
-                      <button type="submit" class="submit_btn">민원 올리기</button>
+                      <button type="submit" class="before_btn">이전으로</button>
+                      <button type="submit" class="submit_btn">보팅하기</button>
                     </div> <!-- END min_btn_box-->
 
                   </form>
