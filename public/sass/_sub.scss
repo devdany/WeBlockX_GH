@@ -72,7 +72,12 @@
       padding-bottom:10px;
       @include basic-icon();
       display: block;
+      &.icon2,
+      &.icon5{
+        padding-bottom:0;
+      }
     }
+
 
     .icon1{
       background-image: url('../images/sub/r-icon1.png');
@@ -124,6 +129,7 @@
         @include all-padding(0.5rem, 0.8rem);
         cursor: pointer;
         font-size: map_get($use-font, xsmall-f);
+        background-color: transparent;
       }
       .sc1_btn2{
         margin-left:0.3rem;
@@ -167,6 +173,28 @@
     margin-bottom:3rem;
     margin-top:9rem;
   }
+
+&.minwon_page{
+  .sc2{
+    .inner_box{
+      background-image: url('../images/sub/m_icon1.png');
+      height: 195px;
+      background-repeat: no-repeat;
+      padding-left:175px;
+      width:100%;
+      background-position: center left;
+    }
+    .s_title{
+      border-left: none;
+      padding-top:2rem;
+    }
+    .s_desc{
+      margin-bottom:1rem;
+      padding-left:0.5rem;
+      font-size: map_get($use-font, xsmall2-f);
+    }
+  }
+  }
 }
 
 //////input_table
@@ -176,7 +204,7 @@
 }
 
 .input_table_box{
-  width: 800px;
+  width: 830px;
   margin-top:3rem;
 }
 .input_table{
@@ -190,7 +218,8 @@
   }
 
   .person_id,
-  .person_title{
+  .person_title,
+  .complain_title{
     width: 80%;
     border:0;
     background-color: #eeeeee;
@@ -200,10 +229,10 @@
   }
 
   .minwon_txt{
-    border: 1px solid #eee;
+    //border: 1px solid #eee;
     width: 80%;
-    height: 135px;
-    overflow-y:auto;
+    //height: 135px;
+    //overflow-y:auto;
     outline:none;
     padding-left:15px;
     padding-top:15px;
@@ -212,8 +241,8 @@
 
   .reply_txt{
     border: 1px solid #eee;
-    width: 65%;
-    height: 50px;
+    width: 82%;
+    height: 60px;
     overflow-y:auto;
     outline:none;
     padding-left:15px;
@@ -224,9 +253,9 @@
 
   .reply_btn{
     width: 14%;
-    height: 67px;
-    line-height: 67px;
-    background-color: map_get($use-color, s_btn4-c);
+    height: 77px;
+    line-height: 77px;
+    background-color: map_get($use-color, reply-c);
     display: inline-block;
     vertical-align: text-top;
     border:none;
@@ -246,7 +275,8 @@
   margin-top:3rem;
   text-align: center;
   .submit_btn,
-  .before_btn{
+  .before_btn,
+  .vote_btn{
     border:none;
     border-radius: 24px;
     padding:0.8rem 2.5rem;
@@ -256,9 +286,17 @@
   }
   .submit_btn{
     background-color: map_get($use-color, gnb-c);
+    font-family: bold_font;
+    padding:0.8rem 5rem;
   }
   .before_btn{
     background-color: map_get($use-color, btn3-c);
+  }
+  .vote_btn{
+    border: 1px solid map_get($use-color, reply-c);
+    color: map_get($use-color, strong-c);
+    background-color: transparent;
+    font-family: bold_font;
   }
 }
 
@@ -348,6 +386,398 @@
       height: 30px;
       display: inline-block;
       vertical-align: middle;
+    }
+  }
+}
+
+
+/////////minwon_page2
+.minwon_page2{
+  .minwon_icon_box{
+    @include basic-margin(3rem);
+    width: 800px;
+  }
+  .minwon_inner_box{
+    li{
+      float:left;
+      width:16.66667%;
+      text-align: center;
+      .m_icon_img{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 80px;
+      }
+      .m_txt{
+        font-size: map_get($use-font, xsmall-f);
+        font-family: 'medium_font';
+        margin-top:0.7rem;
+      }
+    }
+
+    .m_icon1{
+      .m_icon_img{
+        background-image:url('../images/sub/icon1.png');
+      }
+    }
+
+    .m_icon2{
+      .m_icon_img{
+        background-image:url('../images/sub/icon2.png');
+      }
+    }
+
+    .m_icon3{
+      .m_icon_img{
+        background-image:url('../images/sub/icon3.png');
+      }
+    }
+
+    .m_icon4{
+      .m_icon_img{
+        background-image:url('../images/sub/icon4.png');
+      }
+    }
+
+    .m_icon5{
+      .m_icon_img{
+        background-image:url('../images/sub/icon5.png');
+      }
+    }
+
+    .m_icon6{
+      .m_icon_img{
+        background-image:url('../images/sub/icon6.png');
+      }
+    }
+    .m_icon{
+      filter:grayscale(100%);
+      &.on{
+        filter:grayscale(0%);
+        border:1px solid map_get($use-color, minwon-active);
+        border-radius: 50%;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:-10px;
+        box-shadow: 0 0 25px rgba(89, 164, 171, 0.25);
+      }
+    }
+  }
+}
+
+
+///////table_list
+.minwon_list_page{
+
+  //////m_list_tab
+  .m_list_tab{
+    border-bottom: 1px solid map_get($use-color, border2-c);
+    padding-bottom:1rem;
+    margin-bottom: 1rem;
+    li{
+      float:left;
+      width:20%;
+      text-align: center;
+      a:link,
+      a:visited{
+        text-decoration: none;
+        color: map_get($use-color, strong-c);
+      }
+    }
+  }
+  //////// m_list_tab finish
+
+  ///////inner_left_box
+  .m_sc1_inner{
+    width: 850px;
+  }
+  .m_sc1_inner_box{
+    float:left;
+    border: 1px solid map_get($use-color, border2-c);
+    padding:1.5rem;
+  }
+
+  .inner_left_box{
+    width: 66%;
+    margin-right:10px;
+  }
+
+  .inner_right_box{
+    width: 20%;
+  }
+
+  .minwon_table_cell{
+    position: relative;
+    border-bottom: 1px solid map_get($use-color, border2-c);
+    padding-bottom: 1rem;
+    border-left: 5px solid transparent;
+    padding-left:1rem;
+    padding-top:0.7rem;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+      background-color: map_get($use-color, hover-c);
+      border-left-color: map_get($use-color, reply-c);
+    }
+  }
+
+  .m_sc1_inner_box{
+    .d_inline_block{
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0.7rem;
+      margin-top: 0.5rem;
+    }
+
+    .minwon_reply{
+      color: map_get($use-color, reply-c);
+      padding-right:10px;
+      font-size: map_get($use-font, xsmall2-f);
+    }
+
+    .minwon_time{
+      position: absolute;
+      right:0;
+      color: map_get($use-color, border2-c);
+      font-size: map_get($use-font, xsmall2-f);
+      padding-right:0.7rem;
+    }
+
+    .minwon_title{
+      a:link,
+      a:visited{
+        text-decoration: none;
+        color: map_get($use-color, strong-c);
+      }
+    }
+  }
+
+  ///////inner left box finish
+
+  //////inner_right_box
+  .inner_right_box{
+    .d_inline_block{
+      display: inline-block;
+      vertical-align: middle;
+      width: 48%;
+    }
+
+    /////right_menu_info
+    .right_menu_info{
+      border-bottom: 1px solid map_get($use-color, strong-c);
+      .t_num{
+        display: block;
+        font-family: 'bold_font';
+        font-size: map_get($use-font, large-f);
+        text-align: center;
+      }
+      .t_num1,
+       .t_txt1{
+         color: map_get($use-color, reply-c);
+       }
+      .t_num2,
+      .t_txt2{
+        color: map_get($use-color, black-c);
+      }
+      .t_txt{
+        display: block;
+        font-size: map_get($use-font, xsmall-f);
+        text-align: center;
+        margin-top:0.7rem;
+      }
+    }
+
+    ///////right_menu_search
+    .right_menu_search{
+      margin-top:1.5rem;
+      margin-bottom:3rem;
+      position:relative;
+      .search_input{
+        border-radius: 17px;
+        width: 100%;
+        display: block;
+        border: none;
+        background-color: map_get($use-color, form-c);
+        @include basic-padding(0.7rem);
+        padding-left:10px;
+      }
+      .search_icon{
+        color: map_get($use-color, black-c);
+        position: absolute;
+        right:0;
+        top:10px;
+      }
+    }
+    /////right_menu_search finish
+
+
+    /////right_menu_icon
+    .right_menu_icon{
+      .btn_set{
+        display: inline-block;
+        vertical-align:middle;
+        width: 31%;
+        text-align: center;
+        &.more_btn{
+          width: 100%;
+          margin-top:1rem;
+        }
+      }
+    }
+  }
+
+
+
+  //////sc2
+  .sc2{
+    width: 850px;
+    .sc2_box{
+        float:left;
+        box-shadow: $box-shadow3;
+    }
+    .left_box{
+      width:63%;
+    }
+    .right_box{
+      width: 35%;
+      margin-left:2%;
+    }
+  }
+
+}
+
+//////minwon_detail_page
+.minwon_detail_page{
+
+  .input_table_box{
+      .person_id,
+      .person_title{
+        background-color: transparent;
+        padding-left:0;
+      }
+    .minwon_txt{
+      line-height: 1.4;
+      padding-left:0;
+      font-size: map_get($use-font, xsmall2-f);
+      p{
+        margin-bottom:2rem;
+      }
+    }
+  }
+
+  .minwon_time_box{
+    color: map_get($use-color, gray-c);
+  }
+
+  ////reply_box
+  .d_inline_block{
+    padding-right:30px;
+  }
+
+  .reply_box{
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid map_get($use-color, border2-c);
+
+    .reply_small_box{
+      position: relative;
+      padding-top:1rem;
+      padding-bottom:1rem;
+      border-bottom: 1px solid map_get($use-color, border2-c);
+      padding-left:10px;
+      padding-right: 10px;
+    }
+
+    .reply_check_box{
+      svg{
+        color: map_get($use-color, reply-c);
+      }
+      .reply_check{
+        font-family: bold_font;
+      }
+    }
+
+    .reply_id_box{
+      color:map_get($use-color, gray-c);
+      font-size: map_get($use-font, xsmall2-f);
+    }
+
+    .reply_title_box{
+      font-family: bold_font;
+    }
+
+    .reply_time_box{
+      position: absolute;
+      right:0;
+      color:map_get($use-color, gray-c);
+      font-size: map_get($use-font, xsmall2-f);
+    }
+
+    .reply_write_box{
+      margin-top:1rem;
+    }
+  }
+}
+
+////////share
+.a3{
+  float:left;
+  width:33.3333%;
+}
+
+.share_page{
+  .sc2{
+    width:830px;
+    .left_box,
+    .right_box{
+      float:left;
+    }
+    .left_box{
+      width:37%;
+      border-right: 1px solid map_get($use-color, strong-c);
+      box-sizing: border-box;
+      margin-right:3%;
+      .block_btn_box{
+        .sc1_btn{
+          border: 1px solid map_get($use-color, border-c);
+          border-radius: 30px;
+          font-family: 'light_font';
+          @include all-padding(0.5rem, 0.8rem);
+          cursor: pointer;
+          font-size: map_get($use-font, xsmall2-f);
+          background-color: transparent;
+          text-decoration: none;
+          display: inline-block;
+          color: map_get($use-color, strong-c);
+          margin-top:1rem;
+        }
+      }
+    }
+    .right_box{
+      width:60%;
+      border:1px solid map_get($use-color, reply-c);
+      box-sizing: border-box;
+      text-align: center;
+      padding:1.5rem 1rem;
+      border-radius: 7px;
+      .s_title{
+        border-left:0;
+        font-size: map_get($use-font, small-f);
+        margin-bottom:0.2rem;
+        margin-top:0.5rem;
+      }
+      .s_desc{
+        font-size: map_get($use-font, xsmall-f);
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .sc3{
+    padding-top:2rem;
+    .s_title{
+      border-left: 0;
+      text-align: center;
     }
   }
 }

@@ -32,6 +32,10 @@ body{
   @include hidden();
 }
 
+.clearfix{
+  @include clearfix();
+}
+
 .wrapper{
   position: relative;
   min-width: 980px;
@@ -47,4 +51,9 @@ body{
   width:100%;
   min-height: 100vh;
   padding-bottom:3rem;
+}
+
+.d_inline_block{
+  display: inline-block;
+  vertical-align: middle;
 }

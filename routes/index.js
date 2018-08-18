@@ -16,11 +16,14 @@ router.get('/live', function(req, res, next){
     res.render('sub_live', {title: 'Live | WeBlockX'})
 });
 
-router.get('/list', function(req, res, next){
-    res.render('table_list', {title: 'list | WeBlockX'})
+router.get('/token', function(req, res, next){
+    res.render('table_list', {title: '민원 참여하기 | WeBlockX'})
 });
 
-router.get('/list/detail', function(req, res, next){
+router.get('/token/detail', function(req, res, next){
     res.render('sub_detail', {title: 'Live | WeBlockX'})
 });
 
+router.get('/alert', function(req, res, next){
+    res.render('sub_share', {title: '나눔 나누기 | WeBlockX'})
+});

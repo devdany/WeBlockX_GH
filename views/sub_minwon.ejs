@@ -1,12 +1,26 @@
 <% include ./include/header.ejs %>
-<main class="main sub_page">
+<main class="main sub_page minwon_page">
     <% include ./include/gnb.ejs%>
 
           <div class="sub_inner_box">
             <div class="container_980">
 
             <div class="left_content">
-                <sectgon class="s_content sc1">
+                <section class="s_content sc2">
+                    <div class="inner_box">
+                        <h3 class="s_title">
+                            <span class="web_block">국민소통창구로서, 「민원 처리에 관한 법률 및 관련 규정」에 따라</span>
+                            <span class="web_block">행정(공공)기관에 처분 등 특정한 행위를 요구하는 민원을 제출할 수 있습니다.</span>
+                        </h3>
+                        <p class="s_desc">법령ㆍ제도ㆍ절차 등 행정업무에 관한 질의 또는 설명이나 해석의 요구</p>
+                        <p class="s_desc">
+                            <span class="web_block">행정기관의 위법ㆍ부당하거나 소극적인 처분 및 불합리한 행정제도로 인해 국민의 권리를 침해하거나 불편 또는</span>
+                            <span class="web_block">부담을 주는 사항의 해결 요구 등</span>
+                        </p>
+                    </div>
+                </section> <!-- END s_content-->
+
+                <section class="s_content sc1">
                     <h3 class="s_title">민원 신청</h3>
 
                     <form class="minwon_form" method="post" action="/post/postComplain">
@@ -81,49 +95,27 @@
                         </div> <!-- END min_btn_box-->
 
                     </form>
-                </sectgon> <!-- END sc1-->
+                </section> <!-- END sc1-->
             </div> <!-- END left_content-->
 
-<<<<<<< HEAD
-            <div class="sub_btn_box">
-                <div class="btn_box">
-
-                    <a class="btn minwon_btn">
-                        <span class="icon icon1"></span>
-                        민원 올리기
-                    </a>
-
-                    <a href="#" title="실시간 처리 보기 링크" class="btn live_btn">
-                        <span class="icon icon2"></span>
-                        실시간<br/>처리 보기
-                    </a>
-
-                    <a href="#" title="이웃 알리미 바로가기 링크" class="btn info_btn">
-                        <span class="icon icon2"></span>
-                        이웃 알리미
-                    </a>
-
-                    <a href="#" title="토큰 모으기 바로가기 링크" class="btn token_btn">
-                        <span class="icon icon3"></span>
-                        토큰 모으기
-                    </a>
-
-                    <a href="#" title="나눔 더하기 바로가기 링크" class="btn plus_btn">
-                        <span class="icon icon4"></span>
-                        나눔 더하기
-                    </a>
-
-                </div> <!-- END btn_box-->
-            </div> <!-- END sub_btn_box-->
+                <% include ./include/sub_btn.ejs %>
+                <% include ./include/quick.ejs %>
 
         </div> <!-- END container-->
     </div> <!-- END sub_inner_box-->
 
-    <div class="purple_line"></div>
+    <% include ./include/purple_line.ejs%>
 
 </main> <!-- END main-->
 
-<% include ./include/footer.ejs %>
+
+<footer class="footer">
+    <div class="container">
+    </div> <!-- END container-->
+</footer> <!-- END footer-->
+</div> <!-- END wrapper-->
+</body>
+</html>
 
 <script src="/javascripts/jquery-1.12.3.min.js"></script>
 
@@ -195,15 +187,4 @@
 
     })
 </script>
-=======
-                <% include ./include/sub_btn.ejs %>
-                <% include ./include/quick.ejs %>
-
-            </div> <!-- END container-->
-          </div> <!-- END sub_inner_box-->
-
-            <% include ./include/purple_line.ejs %>
-
-      </main> <!-- END main-->
->>>>>>> af68cff941c36c73d0b22ac4fa4d216c246875db
 
