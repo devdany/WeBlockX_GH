@@ -10,8 +10,12 @@
   }
 
   .contents{
+    width: 50%;
+    margin: auto;
     text-align: center;
     .main_txt{
+      width:325px;
+      display: inline-block;
       padding-top:1.5em;
       .main_title{
         font-size: map_get($use-font, medium-f);
@@ -36,6 +40,33 @@
           color: map_get($use-color,strong-c);
         }
       }
+    }
+    &:before,
+    &:after{
+      content: '';
+      display: inline-block;
+      height: 66px;
+      width: 93px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position:relative;
+      top:15px;
+    }
+    &:before{
+      background-image:url('../images/header-img1.png');
+    }
+    &:after{
+      background-image:url('../images/header-img2.png');
+    }
+  }
+
+  .header_btn_box{
+    position:absolute;
+    right:20px;
+    top:20px;
+    button{
+      border:0;
+      background-color: transparent;
     }
   }
 }

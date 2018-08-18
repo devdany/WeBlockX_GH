@@ -128,8 +128,12 @@ body {
     top: 0;
     left: 9px; }
   .header .contents {
+    width: 50%;
+    margin: auto;
     text-align: center; }
     .header .contents .main_txt {
+      width: 325px;
+      display: inline-block;
       padding-top: 1.5em; }
       .header .contents .main_txt .main_title {
         font-size: 1.6rem;
@@ -149,6 +153,26 @@ body {
         padding-top: 5px; }
         .header .contents .main_txt .main_desc .main_strong {
           color: #151515; }
+    .header .contents:before, .header .contents:after {
+      content: '';
+      display: inline-block;
+      height: 66px;
+      width: 93px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 15px; }
+    .header .contents:before {
+      background-image: url("../images/header-img1.png"); }
+    .header .contents:after {
+      background-image: url("../images/header-img2.png"); }
+  .header .header_btn_box {
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+    .header .header_btn_box button {
+      border: 0;
+      background-color: transparent; }
 
 .main {
   position: relative; }
