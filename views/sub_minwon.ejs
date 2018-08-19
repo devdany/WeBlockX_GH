@@ -177,7 +177,7 @@
         }).done(function (result) {
             if(result.message === 'success') {
                 alert('write success!');
-                location.href = '/minwon';
+                location.href = '/post/token/detail/'+result.permlink;
             }else{
                 alert(result);
             }
