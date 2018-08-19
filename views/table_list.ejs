@@ -1,160 +1,106 @@
+<% include ./include/header.ejs %>
+<main class="main sub_page minwon_list_page">
 
-          <% include ./include/header.ejs %>
-        <main class="main sub_page minwon_list_page">
+    <% include ./include/gnb.ejs %>
 
-            <% include ./include/gnb.ejs%>
+    <div class="sub_inner_box">
+        <div class="container_980">
 
-          <div class="sub_inner_box">
-            <div class="container_980">
-
-              <div class="left_content">
+            <div class="left_content">
                 <section class="s_content sc1 clearfix">
 
-                  <ul class="m_list_tab clearfix">
-                    <li>
-                      <a href="#" title="오늘 등록 민원 테이블 보기 링크">오늘 등록 민원</a>
-                    </li>
-                    <li>
-                      <a href="#" title="처리중 테이블 보기 링크">처리중</a>
-                    </li>
-                    <li>
-                      <a href="#" title="처리 완료 테이블 보기 링크">처리 완료</a>
-                    </li>
-                    <li>
-                      <a href="#" title="오늘 등록 민원 테이블 보기 링크">Q&amp;A</a>
-                    </li>
-                  </ul> <!-- END m_list_tab-->
+                    <ul class="m_list_tab clearfix">
+                        <li>
+                            <a href="#" title="오늘 등록 민원 테이블 보기 링크">오늘 등록 민원</a>
+                        </li>
+                        <li>
+                            <a href="#" title="처리중 테이블 보기 링크">처리중</a>
+                        </li>
+                        <li>
+                            <a href="#" title="처리 완료 테이블 보기 링크">처리 완료</a>
+                        </li>
+                        <li>
+                            <a href="#" title="오늘 등록 민원 테이블 보기 링크">Q&amp;A</a>
+                        </li>
+                    </ul> <!-- END m_list_tab-->
 
 
-                  <div class="m_sc1_inner">
-                    <div class="inner_left_box m_sc1_inner_box">
-                      <div class="minwon_table_cell">
-                        <div class="minwon_reply d_inline_block">
-                          <i class="far fa-comment"></i>
-                          <span class="m_data1">12</span>
-                        </div> <!-- END minwon_reply-->
+                    <div class="m_sc1_inner">
+                        <div class="inner_left_box m_sc1_inner_box">
 
-                        <div class="minwon_title d_inline_block">
-                          <h6 class="m_data2">
-                            <a href="/token/detail">
-                              광역버스노선의 확충이 필요합니다.
-                            </a>
-                          </h6>
-                        </div> <!--- END minwon_title-->
+                           <%complains.forEach(function(complain){%>
+                            <div class="minwon_table_cell">
 
-                        <div class="minwon_time d_inline_block">
-                          <i class="far fa-clock"></i>
-                          <span class="m_data3">9:30 PM</span>
-                        </div> <!-- END minwon_titme-->
-                      </div> <!-- END Minwon_table_cell-->
+                                <div class="minwon_title d_inline_block">
+                                    <h6 class="m_data2"><a href="/post/token/detail/<%=complain.permlink%>"><%=complain.title%></a></h6>
+                                </div> <!--- END minwon_title-->
 
-                      <div class="minwon_table_cell">
-                        <div class="minwon_reply d_inline_block">
-                          <i class="far fa-comment"></i>
-                          <span class="m_data1">12</span>
-                        </div> <!-- END minwon_reply-->
+                                <div class="minwon_time d_inline_block">
+                                    <i class="far fa-clock"></i>
+                                    <span class="m_data3"><%=complain.writedate%></span>
+                                </div> <!-- END minwon_titme-->
+                            </div> <!-- END Minwon_table_cell-->
+                            <%})%>
+                        </div> <!-- END inner_left_box-->
 
-                        <div class="minwon_title d_inline_block">
-                          <h6 class="m_data2">
-                            <a href="/token/detail">광역버스노선의 확충이 필요합니다.22</a>
-                          </h6>
-                        </div> <!--- END minwon_title-->
+                        <div class="inner_right_box m_sc1_inner_box">
+                            <div class="right_menu">
 
-                        <div class="minwon_time d_inline_block">
-                          <i class="far fa-clock"></i>
-                          <span class="m_data3">9:30 PM</span>
-                        </div> <!-- END minwon_titme-->
-                      </div> <!-- END Minwon_table_cell-->
-                      <div class="minwon_table_cell">
-                        <div class="minwon_reply d_inline_block">
-                          <i class="far fa-comment"></i>
-                          <span class="m_data1">12</span>
-                        </div> <!-- END minwon_reply-->
+                                <div class="right_menu_info">
+                                    <div class="total_minwon d_inline_block">
+                                        <strong class="t_num t_num1">27</strong>
+                                        <span class="t_txt t_txt1">도민 참여 민원</span>
+                                    </div>
+                                    <div class="help_minwon d_inline_block">
+                                        <strong class="t_num t_num2">7</strong>
+                                        <span class="t_txt t_txt2">후원 요청</span>
+                                    </div>
+                                </div> <!-- END right_menu_info-->
 
-                        <div class="minwon_title d_inline_block">
-                          <h6 class="m_data2"><a href="/token/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                        </div> <!--- END minwon_title-->
-
-                        <div class="minwon_time d_inline_block">
-                          <i class="far fa-clock"></i>
-                          <span class="m_data3">9:30 PM</span>
-                        </div> <!-- END minwon_titme-->
-                      </div> <!-- END Minwon_table_cell-->
-                      <div class="minwon_table_cell">
-                        <div class="minwon_reply d_inline_block">
-                          <i class="far fa-comment"></i>
-                          <span class="m_data1">12</span>
-                        </div> <!-- END minwon_reply-->
-
-                        <div class="minwon_title d_inline_block">
-                          <h6 class="m_data2"><a href="/token/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                        </div> <!--- END minwon_title-->
-
-                        <div class="minwon_time d_inline_block">
-                          <i class="far fa-clock"></i>
-                          <span class="m_data3">9:30 PM</span>
-                        </div> <!-- END minwon_titme-->
-                      </div> <!-- END Minwon_table_cell-->
-                    </div> <!-- END inner_left_box-->
-
-                    <div class="inner_right_box m_sc1_inner_box">
-                      <div class="right_menu">
-
-                        <div class="right_menu_info">
-                          <div class="total_minwon d_inline_block">
-                            <strong class="t_num t_num1">27</strong>
-                            <span class="t_txt t_txt1">도민 참여 민원</span>
-                          </div>
-                          <div class="help_minwon d_inline_block">
-                            <strong class="t_num t_num2">7</strong>
-                            <span class="t_txt t_txt2">후원 요청</span>
-                          </div>
-                        </div> <!-- END right_menu_info-->
-
-                        <div class="right_menu_search">
-                          <input type="text" placeholder="민원을 검색하세요." class="search_input"/>
-                          <button type="button" class="search_icon">
-                            <i class="fas fa-search"></i>
-                          </button>
-                        </div>
-                        <div class="right_menu_icon">
-                          <button type="button" class="mail_btn setting_btn btn_set">
-                            <img src="/images/sub/right_menu_icon1.png" alt="message icon"/>
-                          </button>
-                          <button type="button" class="file_btn btn_set">
-                            <img src="/images/sub/right_menu_icon2.png" alt="file icon"/>
-                          </button>
-                          <button type="button" class="setting_btn btn_set">
-                            <img src="/images/sub/right_menu_icon3.png" alt="setting icon"/>
-                          </button>
-                          <button type="button" class="more_btn btn_set">
-                            <img src="/images/sub/right_menu_icon4.png" alt="more_icon"/>
-                          </button>
-                        </div>
-                      </div> <!-- END right_menu-->
-                    </div> <!-- END inner_right_box-->
-                  </div> <!-- END m_sc1_inner -->
+                                <div class="right_menu_search">
+                                    <input type="text" placeholder="민원을 검색하세요." class="search_input"/>
+                                    <button type="button" class="search_icon">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="right_menu_icon">
+                                    <button type="button" class="mail_btn setting_btn btn_set">
+                                        <img src="/images/sub/right_menu_icon1.png" alt="message icon"/>
+                                    </button>
+                                    <button type="button" class="file_btn btn_set">
+                                        <img src="/images/sub/right_menu_icon2.png" alt="file icon"/>
+                                    </button>
+                                    <button type="button" class="setting_btn btn_set">
+                                        <img src="/images/sub/right_menu_icon3.png" alt="setting icon"/>
+                                    </button>
+                                    <button type="button" class="more_btn btn_set">
+                                        <img src="/images/sub/right_menu_icon4.png" alt="more_icon"/>
+                                    </button>
+                                </div>
+                            </div> <!-- END right_menu-->
+                        </div> <!-- END inner_right_box-->
+                    </div> <!-- END m_sc1_inner -->
 
                 </section> <!-- END sc1-->
 
                 <section class="s_content sc2 clearfix">
-                  <div class="sc2_box left_box">
-                    <img src="/images/sub/block_create.png" alt="block create"/>
-                  </div>
-                  <div class="sc2_box right_box">
-                    <img src="/images/sub/given_total.png" alt="given_total"/>
-                  </div>
+                    <div class="sc2_box left_box">
+                        <img src="/images/sub/block_create.png" alt="block create"/>
+                    </div>
+                    <div class="sc2_box right_box">
+                        <img src="/images/sub/given_total.png" alt="given_total"/>
+                    </div>
                 </section> <!-- END sc2-->
-              </div> <!-- END left_content-->
+            </div> <!-- END left_content-->
 
-              <% include ./include/sub_btn.ejs %>
-              <% include ./include/quick.ejs %>
+            <% include ./include/sub_btn.ejs %>
+            <% include ./include/quick.ejs %>
 
-            </div> <!-- END container-->
-          </div> <!-- END sub_inner_box-->
+        </div> <!-- END container-->
+    </div> <!-- END sub_inner_box-->
 
-            <% include ./include/purple_line.ejs%>
+    <% include ./include/purple_line.ejs %>
 
-      </main> <!-- END main-->
+</main> <!-- END main-->
 
-          <% include ./include/footer.ejs %>
+<% include ./include/footer.ejs %>
