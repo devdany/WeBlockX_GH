@@ -24,3 +24,11 @@ router.get('/alert', function(req, res, next){
 router.get('/admin', function(req, res, next){
     res.render('admin', {title: 'admin | WeBlockX'})
 });
+
+router.get('/mobile1', function(req, res, next){
+    res.render('mobile/mobile1', {title: 'admin | WeBlockX'})
+});
+
+router.get('/mobile2', function(req, res, next){
+    res.render('mobile/mobile2', {title: 'admin | WeBlockX'})
+});

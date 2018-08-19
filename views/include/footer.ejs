@@ -20,6 +20,13 @@
             $(".admin_modal").addClass('on');
             return false;
         });
+
+        $(".mobile_btn").on('click', function(){
+            $(".mobile_modal").addClass('on');
+        });
+        $(".mobile_submit_btn").on('click', function(){
+            $(".mobile_modal").removeClass('on');
+        });
     });
 </script>
 </body>

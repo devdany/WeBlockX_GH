@@ -1244,3 +1244,52 @@ button {
     right: 30px; }
   .admin_modal.on {
     display: block; }
+
+.mobile_box {
+  position: relative; }
+  .mobile_box .mobile_btn_box {
+    position: absolute;
+    top: 30.5rem;
+    right: 1rem; }
+  .mobile_box .mobile_btn {
+    background-color: #4d83ff;
+    color: #ffffff;
+    font-family: light_font;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 17px; }
+
+.mobile_modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  text-align: center; }
+  .mobile_modal .black_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh; }
+  .mobile_modal .mobile_inner_box {
+    position: relative;
+    z-index: 999; }
+    .mobile_modal .mobile_inner_box .mobile_submit_btn {
+      width: 108px;
+      height: 35px;
+      position: absolute;
+      bottom: 52px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      color: #fff;
+      font-family: light_font;
+      font-size: 1rem;
+      background-color: #4d83ff;
+      border-radius: 17px; }
+  .mobile_modal.on {
+    display: block; }
