@@ -467,7 +467,8 @@
 
 
 ///////table_list
-.minwon_list_page{
+.minwon_list_page,
+.admin_page{
 
   //////m_list_tab
   .m_list_tab{
@@ -784,10 +785,384 @@
 
 ///////admin
 .admin_page{
-  display: grid;
-  grid-template-columns: 1fr 980px 1fr;
   .admin_right_menu{
     background-color: map_get($use-color, admin-right-menu);
+    position:relative;
+  }
 
+  .grid_temp{
+    display: grid;
+    grid-template-columns: minmax(1fr, 980px);
+  }
+  .grid1{
+    grid-column: 1 / 2;
+  }
+  .grid2{
+    grid-column: 2 / 3;
+  }
+  .grid3{
+    grid-column: 3 / 4;
+  }
+
+
+  .admin_right_menu{
+    text-align: right;
+    padding-top:2rem;
+    //padding-bottom:5rem;
+    .admin_menu{
+      width: 80%;
+      margin-left:20%;
+      text-align: left;
+      margin-bottom:20rem;
+      .admin_menu_list{
+        li{
+          margin-bottom:1.5rem;
+          a:link,
+          a:visited{
+            text-indent: 5px;
+            color: map_get($use-color, admin-sub-color);
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            padding:0.5rem 0 0.5rem 0;
+            span {
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .menu_txt.on{
+              color: map_get($use-color, white-c);
+            }
+          }
+          a:hover,
+          a:focus,
+          a.on{
+            background-color: #1f2c38;
+            border-radius: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+    .admin_bottom_menu{
+      //position:fixed;
+      //bottom:0;
+    }
+  }
+
+  ////////grid2
+  .admin_info{
+    .admin_name{
+      font-size: map_get($use-font, medium2-f);
+    }
+    .admin_star{
+      display: inline-block;
+     vertical-align: top;
+      .c_red{
+        color: map_get($use-color, admin-red-c);
+      }
+      .c_gray{
+        color: map_get($use-color, admin-gray-c);
+      }
+    }
+
+    .admin_stair{
+      color: map_get($use-color, admin-sub-c);
+      @include basic-padding(0.5rem);
+      .admin_stair_link{
+        color: map_get($use-color, reply-c);
+        text-decoration: none;
+      }
+    }
+
+    .admin_exp{
+      color: map_get($use-color, admin-sub-c);
+    }
+  }
+
+  .sc1{
+    .m_sc1_inner_box{
+      width:27.33333%;
+      height: 280px;
+      position:relative;
+    }
+    .m_inner_box2{
+      margin-left:1%;
+      margin-right:1%;
+    }
+    .m_sc1_inner{
+      width: 100%;
+    }
+    .m_list_tab{
+      margin-top:2rem;
+      li{
+        width: 14.28571%;
+      }
+    }
+
+    .admin_minwon_num_box{
+      padding-bottom:1rem;
+      li{
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+        strong{
+          display: block;
+          font-family: bold_font;
+          font-size: map_get($use-font, large-f);
+          color:  map_get($use-color, admin-c2);
+        }
+        span{
+          color:  map_get($use-color, admin-c2);
+          font-size: map_get($use-font, xsmall-f);
+          display: block;
+         margin-top:0.5rem;
+        }
+
+      }
+    }
+
+    .m_inner_box1{
+      .num1,
+      .txt1{
+        color: map_get($use-color, admin-c1);
+      }
+    }
+
+    .m_inner_box2{
+      .num1,
+      .txt1{
+        color: map_get($use-color, admin-c3);
+      }
+    }
+
+    .m_inner_box3{
+      .num1,
+      .txt1{
+        color: map_get($use-color, admin-c4);
+      }
+    }
+
+    .minwon_table_cell{
+      position:relative;
+      padding-bottom:0.3rem;
+      padding-top:0.5rem;
+      .minwon_title{
+        font-size: map_get($use-font, xsmall-f);
+        color: map_get($use-color, admin-c2);
+      }
+      .m_data2{
+        width:185px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+    }
+  }
+
+  .admin_more_box{
+    position:absolute;
+    right:10px;
+    bottom:20px;
+    .more_btn{
+      font-size: map_get($use-font, xsmall4-f);
+      color: map_get($use-color, admin-c2);
+    }
+
+  }
+
+  .minwon_percent_box{
+    padding-left:0;
+    padding-right:0.5rem;
+    margin-bottom:0!important;
+  }
+
+  .minwon_percent{
+    display: block;
+    width: 40px;
+    background-color: map_get($use-color, admin-c7);
+    position:relative;
+    bottom:-5px;
+    &:before{
+      color: map_get($use-color, admin-c2);
+      display: block;
+      position:absolute;
+      top:-12px;
+      font-size: map_get($use-font, xsmall-f);
+      right:8px;
+    }
+    &.p_35{
+      height: 15px;
+      bottom:-9px;
+      &:before{
+        content:'35%';
+      }
+    }
+    &.p_20{
+      height: 10px;
+      bottom:-12px;
+      &:before{
+        content:'20%';
+      }
+    }
+    &.p_70{
+      height: 35px;
+      &:before{
+        content:'70%';
+      }
+    }
+    &.p_90{
+      height: 40px;
+      &:before{
+        content:'90%';
+      }
+    }
+  }
+
+  /////sc1
+
+  .sc2{
+    .admin_left,
+    .admin_right{
+      float:left;
+    }
+    .admin_left{
+      width:45%;
+      border: 1px solid map_get($use-color, border2-c);
+      box-sizing: border-box;
+      padding:1.5rem;
+      color: map_get($use-color, admin-c2);
+      .a4{
+        margin-top:1rem;
+        margin-bottom:1rem;
+        float:left;
+        width: 25%;
+        font-size: map_get($use-font, xsmall4-f);
+        text-align: center;
+        .percent{
+          width: 44px;
+          height: 40px;
+          background-color: map_get($use-color, admin-c5);
+          margin:0 auto 0.5rem;
+         // position:relative;
+          span{
+            background-color: map_get($use-color, admin-c6);
+            display: block;
+            //position:absolute;
+            //bottom:0;
+          }
+          .p_ing1{
+            height: 30px;
+            position:relative;
+            bottom:-10px;
+          }
+          .p_ing2{
+            height: 12px;
+            position:relative;
+            bottom:-28px;
+          }
+          .p_ing3{
+            height: 21px;
+            position:relative;
+            bottom:-19px;
+          }
+        }
+
+        .num3{
+          font-family: bold_font;
+          font-size: map_get($use-font, large-f);
+          color: map_get($use-color, admin-c6);
+          display: block;
+          margin-bottom:1rem;
+        }
+      }
+      .admin_bottom_box{
+        clear:both;
+        margin-top:1rem;
+        padding-top:1rem;
+        border-top: 1px solid map_get($use-color, border2-c);
+      }
+    }
+    .admin_right{
+      width: 55%;
+      .admin_title{
+        padding-bottom:0.5rem;
+        border-bottom: 1px solid map_get($use-color, border2-c);
+      }
+      .admin_more_box{
+        bottom: 94px;
+      }
+    }
+  }
+}
+
+
+
+/////modal
+.admin_modal{
+  display: none;
+  min-height: 600px;
+  overflow-y: auto;
+  position: fixed;
+  right:0;
+  left:0;
+  bottom:0;
+  top:0;
+
+  .black_bg{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right:0;
+    left:0;
+    bottom:0;
+    top:0;
+  }
+
+  .modal_inner_box{
+    position:relative;
+    z-index:999;
+    background-color: #fff;
+    width: 800px;
+    margin: auto;
+    padding:2rem;
+  }
+  .minwon_txt{
+    p{
+      margin-bottom:1rem;
+    }
+  }
+
+  .sc1,
+  .sc2,
+  .sc3{
+    padding-bottom:2rem;
+  }
+
+  .admin_feedback_btn{
+    text-align: center;
+  }
+  .feedback_btn{
+    border: 1px solid map_get($use-color, border-c);
+    padding:0.5rem 1.5rem;
+    font-size: map_get($use-font, small-f);
+    font-family: light_font;
+    border-radius: 17px;
+  }
+
+  .select_box,
+  .to{
+    border: 1px solid map_get($use-color, admin-c2);
+    padding:0.3rem 0.5rem;
+  }
+  .select_box{
+    text-align: center;
+  }
+  .close_btn{
+    color: map_get($use-color, admin-c2);
+    font-size: map_get($use-font, small-f);
+    position:absolute;
+    right:30px;
+  }
+  &.on{
+    display: block;
   }
 }

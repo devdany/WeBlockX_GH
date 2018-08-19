@@ -709,35 +709,44 @@ button {
     margin-top: -10px;
     box-shadow: 0 0 25px rgba(89, 164, 171, 0.25); }
 
-.minwon_list_page .m_list_tab {
+.minwon_list_page .m_list_tab,
+.admin_page .m_list_tab {
   border-bottom: 1px solid #dee1e2;
   padding-bottom: 1rem;
   margin-bottom: 1rem; }
-  .minwon_list_page .m_list_tab li {
+  .minwon_list_page .m_list_tab li,
+  .admin_page .m_list_tab li {
     float: left;
     width: 20%;
     text-align: center; }
     .minwon_list_page .m_list_tab li a:link,
-    .minwon_list_page .m_list_tab li a:visited {
+    .minwon_list_page .m_list_tab li a:visited,
+    .admin_page .m_list_tab li a:link,
+    .admin_page .m_list_tab li a:visited {
       text-decoration: none;
       color: #151515; }
 
-.minwon_list_page .m_sc1_inner {
+.minwon_list_page .m_sc1_inner,
+.admin_page .m_sc1_inner {
   width: 850px; }
 
-.minwon_list_page .m_sc1_inner_box {
+.minwon_list_page .m_sc1_inner_box,
+.admin_page .m_sc1_inner_box {
   float: left;
   border: 1px solid #dee1e2;
   padding: 1.5rem; }
 
-.minwon_list_page .inner_left_box {
+.minwon_list_page .inner_left_box,
+.admin_page .inner_left_box {
   width: 66%;
   margin-right: 10px; }
 
-.minwon_list_page .inner_right_box {
+.minwon_list_page .inner_right_box,
+.admin_page .inner_right_box {
   width: 20%; }
 
-.minwon_list_page .minwon_table_cell {
+.minwon_list_page .minwon_table_cell,
+.admin_page .minwon_table_cell {
   position: relative;
   border-bottom: 1px solid #dee1e2;
   padding-bottom: 1rem;
@@ -745,22 +754,27 @@ button {
   padding-left: 1rem;
   padding-top: 0.7rem;
   cursor: pointer; }
-  .minwon_list_page .minwon_table_cell:hover, .minwon_list_page .minwon_table_cell:focus {
+  .minwon_list_page .minwon_table_cell:hover, .minwon_list_page .minwon_table_cell:focus,
+  .admin_page .minwon_table_cell:hover,
+  .admin_page .minwon_table_cell:focus {
     background-color: #f6f8fc;
     border-left-color: #4d83ff; }
 
-.minwon_list_page .m_sc1_inner_box .d_inline_block {
+.minwon_list_page .m_sc1_inner_box .d_inline_block,
+.admin_page .m_sc1_inner_box .d_inline_block {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0.7rem;
   margin-top: 0.5rem; }
 
-.minwon_list_page .m_sc1_inner_box .minwon_reply {
+.minwon_list_page .m_sc1_inner_box .minwon_reply,
+.admin_page .m_sc1_inner_box .minwon_reply {
   color: #4d83ff;
   padding-right: 10px;
   font-size: 0.9rem; }
 
-.minwon_list_page .m_sc1_inner_box .minwon_time {
+.minwon_list_page .m_sc1_inner_box .minwon_time,
+.admin_page .m_sc1_inner_box .minwon_time {
   position: absolute;
   right: 0;
   color: #dee1e2;
@@ -768,39 +782,51 @@ button {
   padding-right: 0.7rem; }
 
 .minwon_list_page .m_sc1_inner_box .minwon_title a:link,
-.minwon_list_page .m_sc1_inner_box .minwon_title a:visited {
+.minwon_list_page .m_sc1_inner_box .minwon_title a:visited,
+.admin_page .m_sc1_inner_box .minwon_title a:link,
+.admin_page .m_sc1_inner_box .minwon_title a:visited {
   text-decoration: none;
   color: #151515; }
 
-.minwon_list_page .inner_right_box .d_inline_block {
+.minwon_list_page .inner_right_box .d_inline_block,
+.admin_page .inner_right_box .d_inline_block {
   display: inline-block;
   vertical-align: middle;
   width: 48%; }
 
-.minwon_list_page .inner_right_box .right_menu_info {
+.minwon_list_page .inner_right_box .right_menu_info,
+.admin_page .inner_right_box .right_menu_info {
   border-bottom: 1px solid #151515; }
-  .minwon_list_page .inner_right_box .right_menu_info .t_num {
+  .minwon_list_page .inner_right_box .right_menu_info .t_num,
+  .admin_page .inner_right_box .right_menu_info .t_num {
     display: block;
     font-family: 'bold_font';
     font-size: 1.9rem;
     text-align: center; }
   .minwon_list_page .inner_right_box .right_menu_info .t_num1,
-  .minwon_list_page .inner_right_box .right_menu_info .t_txt1 {
+  .minwon_list_page .inner_right_box .right_menu_info .t_txt1,
+  .admin_page .inner_right_box .right_menu_info .t_num1,
+  .admin_page .inner_right_box .right_menu_info .t_txt1 {
     color: #4d83ff; }
   .minwon_list_page .inner_right_box .right_menu_info .t_num2,
-  .minwon_list_page .inner_right_box .right_menu_info .t_txt2 {
+  .minwon_list_page .inner_right_box .right_menu_info .t_txt2,
+  .admin_page .inner_right_box .right_menu_info .t_num2,
+  .admin_page .inner_right_box .right_menu_info .t_txt2 {
     color: #606060; }
-  .minwon_list_page .inner_right_box .right_menu_info .t_txt {
+  .minwon_list_page .inner_right_box .right_menu_info .t_txt,
+  .admin_page .inner_right_box .right_menu_info .t_txt {
     display: block;
     font-size: 0.8rem;
     text-align: center;
     margin-top: 0.7rem; }
 
-.minwon_list_page .inner_right_box .right_menu_search {
+.minwon_list_page .inner_right_box .right_menu_search,
+.admin_page .inner_right_box .right_menu_search {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   position: relative; }
-  .minwon_list_page .inner_right_box .right_menu_search .search_input {
+  .minwon_list_page .inner_right_box .right_menu_search .search_input,
+  .admin_page .inner_right_box .right_menu_search .search_input {
     border-radius: 17px;
     width: 100%;
     display: block;
@@ -809,29 +835,36 @@ button {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     padding-left: 10px; }
-  .minwon_list_page .inner_right_box .right_menu_search .search_icon {
+  .minwon_list_page .inner_right_box .right_menu_search .search_icon,
+  .admin_page .inner_right_box .right_menu_search .search_icon {
     color: #606060;
     position: absolute;
     right: 0;
     top: 10px; }
 
-.minwon_list_page .inner_right_box .right_menu_icon .btn_set {
+.minwon_list_page .inner_right_box .right_menu_icon .btn_set,
+.admin_page .inner_right_box .right_menu_icon .btn_set {
   display: inline-block;
   vertical-align: middle;
   width: 31%;
   text-align: center; }
-  .minwon_list_page .inner_right_box .right_menu_icon .btn_set.more_btn {
+  .minwon_list_page .inner_right_box .right_menu_icon .btn_set.more_btn,
+  .admin_page .inner_right_box .right_menu_icon .btn_set.more_btn {
     width: 100%;
     margin-top: 1rem; }
 
-.minwon_list_page .sc2 {
+.minwon_list_page .sc2,
+.admin_page .sc2 {
   width: 850px; }
-  .minwon_list_page .sc2 .sc2_box {
+  .minwon_list_page .sc2 .sc2_box,
+  .admin_page .sc2 .sc2_box {
     float: left;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
-  .minwon_list_page .sc2 .left_box {
+  .minwon_list_page .sc2 .left_box,
+  .admin_page .sc2 .left_box {
     width: 63%; }
-  .minwon_list_page .sc2 .right_box {
+  .minwon_list_page .sc2 .right_box,
+  .admin_page .sc2 .right_box {
     width: 35%;
     margin-left: 2%; }
 
@@ -929,8 +962,285 @@ button {
     border-left: 0;
     text-align: center; }
 
-.admin_page {
+.admin_page .admin_right_menu {
+  background-color: #34495e;
+  position: relative; }
+
+.admin_page .grid_temp {
   display: grid;
-  grid-template-columns: 1fr 980px 1fr; }
-  .admin_page .admin_right_menu {
-    background-color: #34495e; }
+  grid-template-columns: minmax(1fr, 980px); }
+
+.admin_page .grid1 {
+  grid-column: 1 / 2; }
+
+.admin_page .grid2 {
+  grid-column: 2 / 3; }
+
+.admin_page .grid3 {
+  grid-column: 3 / 4; }
+
+.admin_page .admin_right_menu {
+  text-align: right;
+  padding-top: 2rem; }
+  .admin_page .admin_right_menu .admin_menu {
+    width: 80%;
+    margin-left: 20%;
+    text-align: left;
+    margin-bottom: 20rem; }
+    .admin_page .admin_right_menu .admin_menu .admin_menu_list li {
+      margin-bottom: 1.5rem; }
+      .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:link,
+      .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:visited {
+        text-indent: 5px;
+        color: #95a5a6;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 0; }
+        .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:link span,
+        .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:visited span {
+          display: inline-block;
+          vertical-align: middle; }
+        .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:link .menu_txt.on,
+        .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:visited .menu_txt.on {
+          color: #ffffff; }
+      .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:hover,
+      .admin_page .admin_right_menu .admin_menu .admin_menu_list li a:focus,
+      .admin_page .admin_right_menu .admin_menu .admin_menu_list li a.on {
+        background-color: #1f2c38;
+        border-radius: 10px 0 0 10px; }
+
+.admin_page .admin_info .admin_name {
+  font-size: 1.3rem; }
+
+.admin_page .admin_info .admin_star {
+  display: inline-block;
+  vertical-align: top; }
+  .admin_page .admin_info .admin_star .c_red {
+    color: #e74c3c; }
+  .admin_page .admin_info .admin_star .c_gray {
+    color: #bdc3c7; }
+
+.admin_page .admin_info .admin_stair {
+  color: #909b9c;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+  .admin_page .admin_info .admin_stair .admin_stair_link {
+    color: #4d83ff;
+    text-decoration: none; }
+
+.admin_page .admin_info .admin_exp {
+  color: #909b9c; }
+
+.admin_page .sc1 .m_sc1_inner_box {
+  width: 27.33333%;
+  height: 280px;
+  position: relative; }
+
+.admin_page .sc1 .m_inner_box2 {
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.admin_page .sc1 .m_sc1_inner {
+  width: 100%; }
+
+.admin_page .sc1 .m_list_tab {
+  margin-top: 2rem; }
+  .admin_page .sc1 .m_list_tab li {
+    width: 14.28571%; }
+
+.admin_page .sc1 .admin_minwon_num_box {
+  padding-bottom: 1rem; }
+  .admin_page .sc1 .admin_minwon_num_box li {
+    display: inline-block;
+    width: 49%;
+    text-align: center; }
+    .admin_page .sc1 .admin_minwon_num_box li strong {
+      display: block;
+      font-family: bold_font;
+      font-size: 1.9rem;
+      color: #95a5a6; }
+    .admin_page .sc1 .admin_minwon_num_box li span {
+      color: #95a5a6;
+      font-size: 0.8rem;
+      display: block;
+      margin-top: 0.5rem; }
+
+.admin_page .sc1 .m_inner_box1 .num1,
+.admin_page .sc1 .m_inner_box1 .txt1 {
+  color: #e67333; }
+
+.admin_page .sc1 .m_inner_box2 .num1,
+.admin_page .sc1 .m_inner_box2 .txt1 {
+  color: #8e44ad; }
+
+.admin_page .sc1 .m_inner_box3 .num1,
+.admin_page .sc1 .m_inner_box3 .txt1 {
+  color: #16a085; }
+
+.admin_page .sc1 .minwon_table_cell {
+  position: relative;
+  padding-bottom: 0.3rem;
+  padding-top: 0.5rem; }
+  .admin_page .sc1 .minwon_table_cell .minwon_title {
+    font-size: 0.8rem;
+    color: #95a5a6; }
+  .admin_page .sc1 .minwon_table_cell .m_data2 {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; }
+
+.admin_page .admin_more_box {
+  position: absolute;
+  right: 10px;
+  bottom: 20px; }
+  .admin_page .admin_more_box .more_btn {
+    font-size: 0.75rem;
+    color: #95a5a6; }
+
+.admin_page .minwon_percent_box {
+  padding-left: 0;
+  padding-right: 0.5rem;
+  margin-bottom: 0 !important; }
+
+.admin_page .minwon_percent {
+  display: block;
+  width: 40px;
+  background-color: #1abc9c;
+  position: relative;
+  bottom: -5px; }
+  .admin_page .minwon_percent:before {
+    color: #95a5a6;
+    display: block;
+    position: absolute;
+    top: -12px;
+    font-size: 0.8rem;
+    right: 8px; }
+  .admin_page .minwon_percent.p_35 {
+    height: 15px;
+    bottom: -9px; }
+    .admin_page .minwon_percent.p_35:before {
+      content: '35%'; }
+  .admin_page .minwon_percent.p_20 {
+    height: 10px;
+    bottom: -12px; }
+    .admin_page .minwon_percent.p_20:before {
+      content: '20%'; }
+  .admin_page .minwon_percent.p_70 {
+    height: 35px; }
+    .admin_page .minwon_percent.p_70:before {
+      content: '70%'; }
+  .admin_page .minwon_percent.p_90 {
+    height: 40px; }
+    .admin_page .minwon_percent.p_90:before {
+      content: '90%'; }
+
+.admin_page .sc2 .admin_left,
+.admin_page .sc2 .admin_right {
+  float: left; }
+
+.admin_page .sc2 .admin_left {
+  width: 45%;
+  border: 1px solid #dee1e2;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  color: #95a5a6; }
+  .admin_page .sc2 .admin_left .a4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float: left;
+    width: 25%;
+    font-size: 0.75rem;
+    text-align: center; }
+    .admin_page .sc2 .admin_left .a4 .percent {
+      width: 44px;
+      height: 40px;
+      background-color: #eaedf1;
+      margin: 0 auto 0.5rem; }
+      .admin_page .sc2 .admin_left .a4 .percent span {
+        background-color: #2ecc71;
+        display: block; }
+      .admin_page .sc2 .admin_left .a4 .percent .p_ing1 {
+        height: 30px;
+        position: relative;
+        bottom: -10px; }
+      .admin_page .sc2 .admin_left .a4 .percent .p_ing2 {
+        height: 12px;
+        position: relative;
+        bottom: -28px; }
+      .admin_page .sc2 .admin_left .a4 .percent .p_ing3 {
+        height: 21px;
+        position: relative;
+        bottom: -19px; }
+    .admin_page .sc2 .admin_left .a4 .num3 {
+      font-family: bold_font;
+      font-size: 1.9rem;
+      color: #2ecc71;
+      display: block;
+      margin-bottom: 1rem; }
+  .admin_page .sc2 .admin_left .admin_bottom_box {
+    clear: both;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee1e2; }
+
+.admin_page .sc2 .admin_right {
+  width: 55%; }
+  .admin_page .sc2 .admin_right .admin_title {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee1e2; }
+  .admin_page .sc2 .admin_right .admin_more_box {
+    bottom: 94px; }
+
+.admin_modal {
+  display: none;
+  min-height: 600px;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0; }
+  .admin_modal .black_bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0; }
+  .admin_modal .modal_inner_box {
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+    width: 800px;
+    margin: auto;
+    padding: 2rem; }
+  .admin_modal .minwon_txt p {
+    margin-bottom: 1rem; }
+  .admin_modal .sc1,
+  .admin_modal .sc2,
+  .admin_modal .sc3 {
+    padding-bottom: 2rem; }
+  .admin_modal .admin_feedback_btn {
+    text-align: center; }
+  .admin_modal .feedback_btn {
+    border: 1px solid #0059ac;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: light_font;
+    border-radius: 17px; }
+  .admin_modal .select_box,
+  .admin_modal .to {
+    border: 1px solid #95a5a6;
+    padding: 0.3rem 0.5rem; }
+  .admin_modal .select_box {
+    text-align: center; }
+  .admin_modal .close_btn {
+    color: #95a5a6;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 30px; }
+  .admin_modal.on {
+    display: block; }
