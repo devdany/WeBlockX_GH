@@ -27,3 +27,7 @@ router.get('/token/detail', function(req, res, next){
 router.get('/alert', function(req, res, next){
     res.render('sub_share', {title: '나눔 나누기 | WeBlockX'})
 });
+
+router.get('/admin', function(req, res, next){
+    res.render('admin', {title: 'admin | WeBlockX'})
+});

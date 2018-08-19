@@ -720,12 +720,12 @@
 }
 
 ////////share
-.a3{
-  float:left;
-  width:33.3333%;
-}
 
 .share_page{
+  .a3{
+    float:left;
+    width:33.3333%;
+  }
   .sc2{
     width:830px;
     .left_box,
@@ -779,5 +779,15 @@
       border-left: 0;
       text-align: center;
     }
+  }
+}
+
+///////admin
+.admin_page{
+  display: grid;
+  grid-template-columns: 1fr 980px 1fr;
+  .admin_right_menu{
+    background-color: map_get($use-color, admin-right-menu);
+
   }
 }

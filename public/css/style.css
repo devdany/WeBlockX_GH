@@ -118,6 +118,10 @@ body {
   display: inline-block;
   vertical-align: middle; }
 
+button {
+  border: none;
+  background-color: transparent; }
+
 .header {
   background-color: #ffffff;
   height: 90px;
@@ -877,7 +881,7 @@ body {
   .minwon_detail_page .reply_box .reply_write_box {
     margin-top: 1rem; }
 
-.a3 {
+.share_page .a3 {
   float: left;
   width: 33.3333%; }
 
@@ -924,3 +928,9 @@ body {
   .share_page .sc3 .s_title {
     border-left: 0;
     text-align: center; }
+
+.admin_page {
+  display: grid;
+  grid-template-columns: 1fr 980px 1fr; }
+  .admin_page .admin_right_menu {
+    background-color: #34495e; }
