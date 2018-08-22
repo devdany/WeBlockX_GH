@@ -46,6 +46,10 @@ const user = connector.define('USER', {
     last_login: {
         type: Sequelize.STRING,
         allowNull: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: true
     }
 },{
     freezeTableName: true,
