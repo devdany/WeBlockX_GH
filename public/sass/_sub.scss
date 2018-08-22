@@ -14,6 +14,42 @@
         a:link,
         a:visited{
           color: map_get($use-color, strong-c);
+          position:relative;
+          padding-bottom: 25px;
+          z-index: 9;
+          &:before{
+            width: 0;
+            height: 0;
+            border-top: 60px solid transparent;
+            border-right: 15px solid transparent;
+            display: block;
+            content:'';
+            position:absolute;
+            top:0;
+            left:-15px;
+          }
+          &:after{
+            width: 0;
+            height: 0;
+            border-bottom: 60px solid transparent;
+            border-left: 15px solid transparent;
+            display: block;
+            content:'';
+            position:absolute;
+            top:0;
+            right:-15px;
+          }
+        }
+        a:hover,
+        a:focus,
+        a.on{
+          color: map_get($use-color, white-c);
+          &:before{
+            border-right-color: map_get($use-color, gnb-c);
+          }
+          &:after{
+            border-left-color: map_get($use-color, gnb-c);
+          }
         }
       }
     }

@@ -178,13 +178,19 @@ button {
       border: 0;
       background-color: transparent; }
 
+.sub_inner_box > .container_980 {
+  border-top: 1px solid #151515;
+  margin-top: -8px; }
+
+.visual > .container_980 {
+  border-top: 1px solid #ffffff;
+  margin-top: -8px; }
+
 .main {
   position: relative; }
 
 .gnbbox {
   position: relative; }
-  .gnbbox .gnb_innerbox {
-    border-bottom: 1px solid #ffffff; }
   .gnbbox .hidden_menu {
     position: absolute;
     top: 14px;
@@ -210,10 +216,41 @@ button {
       height: 100%;
       padding-top: 1.2rem;
       padding-bottom: 1.2rem;
-      text-align: center; }
+      padding-bottom: 25px;
+      text-align: center;
+      z-index: 9;
+      position: relative; }
+      .gnbbox .gnb li a:link:before,
+      .gnbbox .gnb li a:visited:before {
+        width: 0;
+        height: 0;
+        border-top: 60px solid transparent;
+        border-right: 15px solid transparent;
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -15px; }
+      .gnbbox .gnb li a:link:after,
+      .gnbbox .gnb li a:visited:after {
+        width: 0;
+        height: 0;
+        border-bottom: 60px solid transparent;
+        border-left: 15px solid transparent;
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -15px; }
     .gnbbox .gnb li a:hover,
     .gnbbox .gnb li a:focus {
       background-color: #407aff; }
+      .gnbbox .gnb li a:hover:before,
+      .gnbbox .gnb li a:focus:before {
+        border-right-color: #407aff; }
+      .gnbbox .gnb li a:hover:after,
+      .gnbbox .gnb li a:focus:after {
+        border-left-color: #407aff; }
     .gnbbox .gnb li:nth-child(1) {
       grid-column: 2 / 3; }
     .gnbbox .gnb li:nth-child(2) {
@@ -389,7 +426,45 @@ button {
 
 .sub_page .gnbbox .gnb li a:link,
 .sub_page .gnbbox .gnb li a:visited {
-  color: #151515; }
+  color: #151515;
+  position: relative;
+  padding-bottom: 25px;
+  z-index: 9; }
+  .sub_page .gnbbox .gnb li a:link:before,
+  .sub_page .gnbbox .gnb li a:visited:before {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 15px solid transparent;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; }
+  .sub_page .gnbbox .gnb li a:link:after,
+  .sub_page .gnbbox .gnb li a:visited:after {
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid transparent;
+    border-left: 15px solid transparent;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -15px; }
+
+.sub_page .gnbbox .gnb li a:hover,
+.sub_page .gnbbox .gnb li a:focus,
+.sub_page .gnbbox .gnb li a.on {
+  color: #ffffff; }
+  .sub_page .gnbbox .gnb li a:hover:before,
+  .sub_page .gnbbox .gnb li a:focus:before,
+  .sub_page .gnbbox .gnb li a.on:before {
+    border-right-color: #407aff; }
+  .sub_page .gnbbox .gnb li a:hover:after,
+  .sub_page .gnbbox .gnb li a:focus:after,
+  .sub_page .gnbbox .gnb li a.on:after {
+    border-left-color: #407aff; }
 
 .sub_page .sub_btn_box {
   position: absolute;
