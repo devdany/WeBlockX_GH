@@ -16,8 +16,16 @@ const markdown = require('markdown').markdown;
 const steem = require('steem');
 
 const job = {
-    user: 'USER',
-    admin: 'ADMIN'
+    user: 'user',
+    manager: 'manager'
+}
+
+const team = {
+    1: '도로교통부',
+    2: '여성부',
+    3: '교육부',
+    4: '외교부',
+    5: '고용노동부'
 }
 
 var noticestorage = multer.diskStorage({
@@ -45,6 +53,7 @@ router.get('/token/detail/:permlink', async  (req, res, next) => {
 
     const permlink = req.params.permlink;
     const author = config.steem.user
+
     await steem.api.getContentAsync(author, permlink)
         .then(async postObject => {
 
@@ -120,17 +129,27 @@ router.post('/postComplain', function (req, res, next) {
 
 router.post('/getPostInfo', (req, res) => {
     complainModel.findOne({
+        include: [{
+            model: userModel,
+            required: true,
+        }],
         where:{
             no: req.body.no
         }
-    }).then(complain => {
+    }).then(async complain => {
         //permlink받아서 포스트 정보 받아와서 데이터로 뿌려주면됨
+
+        await steem.api.getContentAsync(config.steem.user, complain.dataValues.permlink).then(post => {
+            const content = markdown.toHTML(post.body)
+            res.send({message: 'success', content: content, raw: post, dbInfo: complain.dataValues})
+        })
 
     })
 })
 
-
+//정리해야함
 router.post('/postFeedback', (req, res) => {
+
     userModel.findOne({
         where: {
             no: 1
@@ -139,7 +158,7 @@ router.post('/postFeedback', (req, res) => {
         if (user) {
             complainModel.findOne({
                 where: {
-                    complain_no: req.body.complain_no
+                    no: req.body.complain_no
                 }
             }).then(async result => {
                 const manager_no = req.body.manager_no;
@@ -153,7 +172,12 @@ router.post('/postFeedback', (req, res) => {
                     const complain = result.dataValues;
                     const permlink = dateFormatConverter.convertToSave(new Date()) + '-feedback-to-' + complain.no + '-' + auth.createCode();
 
-                    const content = `<p>${complain.title} 에 대한 피드백입니다. 담당자는 ${manager.steemId} 입니다. 이후 진행되는 피드백은 담당자가 직접 입력합니다.</p>`
+                    const title = complain.title+'('+complain.permlink+') 피드백'
+                    const content = `<p>담당자: ${manager.name}</p>
+                                     <p>담당기관: ${team[req.body.team]}</p>
+                                     <p>처리예상기간: ${req.body.time}</p>`
+
+
                     const markdownContent = turndownService.turndown(content);
 
                     await steem.broadcast.comment(config.steem.managerPostPassword, '', config.steem.tag, config.steem.manager, permlink, title, markdownContent, config.steem.jsonMetaData, async (posterr, results) => {
@@ -165,7 +189,7 @@ router.post('/postFeedback', (req, res) => {
 
                             feedbackModel.create({
                                 permlink: permlink,
-                                user_no: result.dataValues.no,
+                                user_no: manager_no,
                                 hate: 0,
                                 payoutdate: dateFormatConverter.convertToSave(payday),
                                 writedate: dateFormatConverter.convertToSave(new Date()),

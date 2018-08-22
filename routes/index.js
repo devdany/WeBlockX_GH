@@ -40,7 +40,13 @@ router.get('/admin', function(req, res, next){
         limit: 4,
         order: [['no', 'DESC']]
     }).then(complains => {
-        res.render('admin', {title: '민원 참여하기 | WeBlockX', complains: complains})
+        userModel.findAll({
+            where:{
+                job:'manager'
+            }
+        }).then(managers => {
+            res.render('admin', {title: '민원 참여하기 | WeBlockX', complains: complains, managers: managers})
+        })
     })
 });
 
