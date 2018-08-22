@@ -1,606 +1,584 @@
+<% include ./include/header.ejs %>
+<main class="main sub_page admin_page">
 
-          <% include ./include/header.ejs %>
-        <main class="main sub_page admin_page">
+    <div class="grid_temp">
 
-          <div class="grid_temp">
-
-            <div class="grid1 admin_right_menu">
-              <div class="admin_menu">
+        <div class="grid1 admin_right_menu">
+            <div class="admin_menu">
                 <ul class="admin_menu_list">
-                  <li>
-                    <a href="#" title="새등록 민원 메뉴 바로가기 링크" class="on">
+                    <li>
+                        <a href="#" title="새등록 민원 메뉴 바로가기 링크" class="on">
                         <span class="menu_icon">
                           <img src="/images/admin/right_menu_icon1.png"/>
                         </span>
-                      <span class="menu_txt on">새등록 민원</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="민원 관리 메뉴 바로가기 링크">
+                            <span class="menu_txt on">새등록 민원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="민원 관리 메뉴 바로가기 링크">
                         <span class="menu_icon">
                           <img src="/images/admin/right_menu_icon2.png"/>
                         </span>
-                      <span class="menu_txt">민원 관리</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="지원 민원 메뉴 바로가기 링크">
+                            <span class="menu_txt">민원 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="지원 민원 메뉴 바로가기 링크">
                         <span class="menu_icon">
                           <img src="/images/admin/right_menu_icon3.png"/>
                         </span>
-                      <span class="menu_txt">지연 민원</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="Q&amp;A 메뉴 바로가기 링크">
+                            <span class="menu_txt">지연 민원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Q&amp;A 메뉴 바로가기 링크">
                         <span class="menu_icon">
                           <img src="/images/admin/right_menu_icon4.png"/>
                         </span>
-                      <span class="menu_txt">Q&amp;A</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="해당기관 요청 메뉴 바로가기 링크">
+                            <span class="menu_txt">Q&amp;A</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="해당기관 요청 메뉴 바로가기 링크">
                         <span class="menu_icon">
                           <img src="/images/admin/right_menu_icon5.png"/>
                         </span>
-                      <span class="menu_txt">해당기관 요청</span>
-                    </a>
-                    </a>
-                  </li>
+                            <span class="menu_txt">해당기관 요청</span>
+                        </a>
+                        </a>
+                    </li>
                 </ul> <!-- END admin_menu_list-->
-              </div> <!-- END admin_menu-->
-              <div class="admin_bottom_menu">
+            </div> <!-- END admin_menu-->
+            <div class="admin_bottom_menu">
                 <img src="/images/admin/right_bottom_menu.png"/>
-              </div>
-            </div> <!-- END right_content-->
+            </div>
+        </div> <!-- END right_content-->
 
-            <div class="grid2 sub_inner_box">
-              <div class="container_980">
+        <div class="grid2 sub_inner_box">
+            <div class="container_980">
 
                 <div class="left_content">
-                  <div class="admin_info">
+                    <div class="admin_info">
 
-                    <h4 class="admin_parson">
-                      <span class="admin_name">홍 현 민</span>
-                      <span class="admin_star">
+                        <h4 class="admin_parson">
+                            <span class="admin_name">홍 현 민</span>
+                            <span class="admin_star">
                         <span class="c_red">&starf; &starf; &starf;</span>
                         <span class="c_gray">&starf; &starf;</span>
                       </span>
-                    </h4>
+                        </h4>
 
-                    <p class="admin_stair">
-                      민원처리&middot;관리자
-                      <a href="#" class="admin_stair_link">등급조정</a>
-                    </p>
+                        <p class="admin_stair">
+                            민원처리&middot;관리자
+                            <a href="#" class="admin_stair_link">등급조정</a>
+                        </p>
 
-                    <p class="admin_exp">
-                      <i class="fas fa-award"></i>
-                      8,782 exp
-                    </p>
-                  </div> <!-- END admin_info-->
+                        <p class="admin_exp">
+                            <i class="fas fa-award"></i>
+                            8,782 exp
+                        </p>
+                    </div> <!-- END admin_info-->
 
-                  <section class="s_content sc1">
+                    <section class="s_content sc1">
 
-                    <ul class="m_list_tab clearfix">
-                      <li>
-                        <a href="#" title="오늘 등록 민원 테이블 보기 링크">오늘 등록 민원</a>
-                      </li>
-                      <li>
-                        <a href="#" title="처리중 테이블 보기 링크">처리중</a>
-                      </li>
-                      <li>
-                        <a href="#" title="블록 생성 테이블 보기 링크">블록 생성</a>
-                      </li>
-                      <li>
-                        <a href="#" title="오늘 등록 민원 테이블 보기 링크">Q&amp;A</a>
-                      </li>
-                      <li>
-                        <a href="#" title="관리자 변경 테이블 보기 링크">관리자 변경</a>
-                      </li>
-                      <li>
-                        <a href="#" title="지급 보상 토큰 테이블 보기 링크">지급 보상 토큰</a>
-                      </li>
-                      <li>
-                        <a href="#" title="지급 준비 토큰 테이블 보기 링크">지급 준비 토큰</a>
-                      </li>
-                    </ul> <!-- END m_list_tab-->
-
-                    <div class="m_sc1_inner clearfix">
-
-                        <div class="m_sc1_inner_box m_inner_box1">
-                          <ul class="admin_minwon_num_box">
+                        <ul class="m_list_tab clearfix">
                             <li>
-                              <div class="admin_num_box">
-                                <strong class="num num1">12</strong>
-                                <span class="txt txt1">시설관리</span>
-                              </div> <!-- END admin_num_box--->
+                                <a href="#" title="오늘 등록 민원 테이블 보기 링크">오늘 등록 민원</a>
                             </li>
                             <li>
-                              <div class="admin_num_box">
-                                <strong class="num num2">3</strong>
-                                <span class="txt txt2">지역 단체 관련</span>
-                              </div> <!-- END admin_num_box--->
-                            </li>
-                          </ul>
-                          <div class="minwon_table_cell">
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="admin_more_box">
-                            <button class="more_btn" type="button">더보기 &gt;&gt;</button>
-                          </div> <!-- END admin_more-box-->
-                        </div> <!-- END inner_left_box-->
-
-                        <div class="m_sc1_inner_box m_inner_box2">
-                          <ul class="admin_minwon_num_box">
-                            <li>
-                              <div class="admin_num_box">
-                                <strong class="num num1">27</strong>
-                                <span class="txt txt1">도민 참여 민원</span>
-                              </div> <!-- END admin_num_box--->
+                                <a href="#" title="처리중 테이블 보기 링크">처리중</a>
                             </li>
                             <li>
-                              <div class="admin_num_box">
-                                <strong class="num num2">3</strong>
-                                <span class="txt txt2">후원 요청</span>
-                              </div> <!-- END admin_num_box--->
-                            </li>
-                          </ul>
-
-                          <div class="minwon_table_cell">
-                            <div class="minwon_reply d_inline_block">
-                              <i class="far fa-comment"></i>
-                              <span class="m_data1">12</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-
-                          <div class="minwon_table_cell">
-                            <div class="minwon_reply d_inline_block">
-                              <i class="far fa-comment"></i>
-                              <span class="m_data1">12</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">광역버스노선의 확충이 필요합니다.22</a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-
-                          <div class="minwon_table_cell">
-                            <div class="minwon_reply d_inline_block">
-                              <i class="far fa-comment"></i>
-                              <span class="m_data1">12</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                            </div> <!--- END minwon_title-->
-
-                          </div> <!-- END Minwon_table_cell-->
-
-                          <div class="minwon_table_cell">
-                            <div class="minwon_reply d_inline_block">
-                              <i class="far fa-comment"></i>
-                              <span class="m_data1">12</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
-
-                          <div class="admin_more_box">
-                            <button class="more_btn" type="button">더보기 &gt;&gt;</button>
-                          </div> <!-- END admin_more-box-->
-                        </div> <!-- END inner_left_box-->
-
-                        <div class="m_sc1_inner_box m_inner_box3">
-                          <ul class="admin_minwon_num_box">
-                            <li>
-                              <div class="admin_num_box">
-                                <strong class="num num1">19</strong>
-                                <span class="txt txt1">기부 적립</span>
-                              </div> <!-- END admin_num_box--->
+                                <a href="#" title="블록 생성 테이블 보기 링크">블록 생성</a>
                             </li>
                             <li>
-                              <div class="admin_num_box">
-                                <strong class="num num2">88</strong>
-                                <span class="txt txt2">배분</span>
-                              </div> <!-- END admin_num_box--->
+                                <a href="#" title="오늘 등록 민원 테이블 보기 링크">Q&amp;A</a>
                             </li>
-                          </ul>
+                            <li>
+                                <a href="#" title="관리자 변경 테이블 보기 링크">관리자 변경</a>
+                            </li>
+                            <li>
+                                <a href="#" title="지급 보상 토큰 테이블 보기 링크">지급 보상 토큰</a>
+                            </li>
+                            <li>
+                                <a href="#" title="지급 준비 토큰 테이블 보기 링크">지급 준비 토큰</a>
+                            </li>
+                        </ul> <!-- END m_list_tab-->
 
-                          <div class="minwon_table_cell">
-                            <div class="minwon_percent_box d_inline_block">
-                              <span class="minwon_percent p_70"></span>
-                            </div> <!-- END minwon_reply-->
+                        <div class="m_sc1_inner clearfix">
 
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
+                            <div class="m_sc1_inner_box m_inner_box1">
+                                <ul class="admin_minwon_num_box">
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num1">12</strong>
+                                            <span class="txt txt1">시설관리</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num2">3</strong>
+                                            <span class="txt txt2">지역 단체 관련</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                </ul>
+                                <div class="minwon_table_cell">
 
-                          <div class="minwon_table_cell">
-                            <div class="minwon_percent_box d_inline_block">
-                              <span class="minwon_percent p_20"></span>
-                            </div> <!-- END minwon_reply-->
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/admin/detail">광역버스노선의 확충이 필요합니다.22</a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">
+                                                광역버스노선의 확충이 필요합니다.
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+                                <div class="minwon_table_cell">
 
-                          <div class="minwon_table_cell">
-                            <div class="minwon_percent_box d_inline_block">
-                              <span class="minwon_percent p_35"></span>
-                            </div> <!-- END minwon_reply-->
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">
+                                                광역버스노선의 확충이 필요합니다.
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+                                <div class="minwon_table_cell">
 
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                            </div> <!--- END minwon_title-->
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">
+                                                광역버스노선의 확충이 필요합니다.
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+                                <div class="minwon_table_cell">
 
-                          </div> <!-- END Minwon_table_cell-->
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">
+                                                광역버스노선의 확충이 필요합니다.
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+                                <div class="admin_more_box">
+                                    <button class="more_btn" type="button">더보기 &gt;&gt;</button>
+                                </div> <!-- END admin_more-box-->
+                            </div> <!-- END inner_left_box-->
 
-                          <div class="minwon_table_cell">
-                            <div class="minwon_percent_box d_inline_block">
-                              <span class="minwon_percent p_90"></span>
-                            </div> <!-- END minwon_reply-->
+                            <div class="m_sc1_inner_box m_inner_box2">
+                                <ul class="admin_minwon_num_box">
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num1"><%=complains.length%></strong>
+                                            <span class="txt txt1">도민 참여 민원</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num2">3</strong>
+                                            <span class="txt txt2">후원 요청</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                </ul>
+                                <%complains.forEach(function(complain){%>
+                                <div class="minwon_table_cell">
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="#" class="admin_complain_info" id="<%=complain.no%>">
+                                                <%=complain.title%>
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+                                <%})%>
 
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
-                            </div> <!--- END minwon_title-->
-                          </div> <!-- END Minwon_table_cell-->
+                                <div class="admin_more_box">
+                                    <button class="more_btn" type="button">더보기 &gt;&gt;</button>
+                                </div> <!-- END admin_more-box-->
+                            </div> <!-- END inner_left_box-->
 
-                          <div class="admin_more_box">
-                            <button class="more_btn" type="button">더보기 &gt;&gt;</button>
-                          </div> <!-- END admin_more-box-->
-                        </div> <!-- END inner_left_box-->
-                    </div> <!-- END m_sc1_inner -->
-                  </section> <!-- END sc1-->
+                            <div class="m_sc1_inner_box m_inner_box3">
+                                <ul class="admin_minwon_num_box">
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num1">19</strong>
+                                            <span class="txt txt1">기부 적립</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                    <li>
+                                        <div class="admin_num_box">
+                                            <strong class="num num2">88</strong>
+                                            <span class="txt txt2">배분</span>
+                                        </div> <!-- END admin_num_box--->
+                                    </li>
+                                </ul>
 
-                  <section class="s_content sc2 clearfix">
-                    <div class="admin_left">
+                                <div class="minwon_table_cell">
+                                    <div class="minwon_percent_box d_inline_block">
+                                        <span class="minwon_percent p_70"></span>
+                                    </div> <!-- END minwon_reply-->
 
-                      <article class="admin_top_box">
-                        <h4 class="admin_title">지급보상 현황</h4>
-                        <div class="a4 a41">
-                          <div class="percent p_1">
-                            <span class="p_ing1"></span>
-                          </div>
-                          <p class="p_txt">민원제안</p>
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">
+                                                광역버스노선의 확충이 필요합니다.
+                                            </a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+
+                                <div class="minwon_table_cell">
+                                    <div class="minwon_percent_box d_inline_block">
+                                        <span class="minwon_percent p_20"></span>
+                                    </div> <!-- END minwon_reply-->
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2">
+                                            <a href="/admin/detail">광역버스노선의 확충이 필요합니다.22</a>
+                                        </h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+
+                                <div class="minwon_table_cell">
+                                    <div class="minwon_percent_box d_inline_block">
+                                        <span class="minwon_percent p_35"></span>
+                                    </div> <!-- END minwon_reply-->
+
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
+                                    </div> <!--- END minwon_title-->
+
+                                </div> <!-- END Minwon_table_cell-->
+
+                                <div class="minwon_table_cell">
+                                    <div class="minwon_percent_box d_inline_block">
+                                        <span class="minwon_percent p_90"></span>
+                                    </div> <!-- END minwon_reply-->
+
+                                    <div class="minwon_title d_inline_block">
+                                        <h6 class="m_data2"><a href="/admin/detail">광역버스노선의 확충이 필요합니다.2332</a></h6>
+                                    </div> <!--- END minwon_title-->
+                                </div> <!-- END Minwon_table_cell-->
+
+                                <div class="admin_more_box">
+                                    <button class="more_btn" type="button">더보기 &gt;&gt;</button>
+                                </div> <!-- END admin_more-box-->
+                            </div> <!-- END inner_left_box-->
+                        </div> <!-- END m_sc1_inner -->
+                    </section> <!-- END sc1-->
+
+                    <section class="s_content sc2 clearfix">
+                        <div class="admin_left">
+
+                            <article class="admin_top_box">
+                                <h4 class="admin_title">지급보상 현황</h4>
+                                <div class="a4 a41">
+                                    <div class="percent p_1">
+                                        <span class="p_ing1"></span>
+                                    </div>
+                                    <p class="p_txt">민원제안</p>
+                                </div>
+                                <div class="a4 a42">
+                                    <div class="percent p_2">
+                                        <span class="p_ing2"></span>
+                                    </div>
+                                    <p class="p_txt">후원/기부</p>
+                                </div>
+                                <div class="a4 a43">
+                                    <div class="percent p_3">
+                                        <span class="p_ing3"></span>
+                                    </div>
+                                    <p class="p_txt">댓글 참여</p>
+                                </div>
+                                <div class="a4 a44">
+                                    <strong class="num num3">+142</strong>
+                                    <p class="p_txt p_txt2">새 참여 도민</p>
+                                </div>
+                            </article> <!-- END admin_top_box-->
+
+                            <article class="admin_bottom_box">
+                                <h4 class="admin_title">경기내 상업시설 결제</h4>
+                                <div class="admin_b_img">
+                                    <img src="/images/admin/left_bottom_menu.png"/>
+                                </div>
+                            </article>
+                        </div> <!-- END admin_left-->
+
+                        <div class="admin_right">
+                            <div class="m_sc1_inner">
+                                <div class="inner_left_box m_sc1_inner_box">
+                                    <h4 class="admin_title">도 전역 긴급공지</h4>
+
+                                    <div class="minwon_table_cell">
+                                        <div class="notice_kind d_inline_block">
+                                            <span class="m_data1">기상</span>
+                                        </div> <!-- END minwon_reply-->
+
+                                        <div class="admin_kind d_inline_block">
+                                            <p class="m_data4">긴급재난문자 발송</p>
+                                        </div> <!--- END minwon_title-->
+
+
+                                        <div class="minwon_title d_inline_block">
+                                            <h6 class="m_data2">
+                                                <a href="/token/detail">
+                                                    광역버스노선의 확충이 필요합니다.
+                                                </a>
+                                            </h6>
+                                        </div> <!--- END minwon_title-->
+
+                                        <div class="minwon_time d_inline_block">
+                                            <i class="far fa-clock"></i>
+                                            <span class="m_data3">9:30 PM</span>
+                                        </div> <!-- END minwon_titme-->
+                                    </div> <!-- END Minwon_table_cell-->
+                                    <div class="minwon_table_cell">
+                                        <div class="notice_kind d_inline_block">
+                                            <span class="m_data1">기상</span>
+                                        </div> <!-- END minwon_reply-->
+
+                                        <div class="admin_kind d_inline_block">
+                                            <p class="m_data4">긴급재난문자 발송</p>
+                                        </div> <!--- END minwon_title-->
+
+
+                                        <div class="minwon_title d_inline_block">
+                                            <h6 class="m_data2">
+                                                <a href="/token/detail">
+                                                    광역버스노선의 확충이 필요합니다.
+                                                </a>
+                                            </h6>
+                                        </div> <!--- END minwon_title-->
+
+                                        <div class="minwon_time d_inline_block">
+                                            <i class="far fa-clock"></i>
+                                            <span class="m_data3">9:30 PM</span>
+                                        </div> <!-- END minwon_titme-->
+                                    </div> <!-- END Minwon_table_cell-->
+                                    <div class="minwon_table_cell">
+                                        <div class="notice_kind d_inline_block">
+                                            <span class="m_data1">기상</span>
+                                        </div> <!-- END minwon_reply-->
+
+                                        <div class="admin_kind d_inline_block">
+                                            <p class="m_data4">긴급재난문자 발송</p>
+                                        </div> <!--- END minwon_title-->
+
+
+                                        <div class="minwon_title d_inline_block">
+                                            <h6 class="m_data2">
+                                                <a href="/token/detail">
+                                                    광역버스노선의 확충이 필요합니다.
+                                                </a>
+                                            </h6>
+                                        </div> <!--- END minwon_title-->
+
+                                        <div class="minwon_time d_inline_block">
+                                            <i class="far fa-clock"></i>
+                                            <span class="m_data3">9:30 PM</span>
+                                        </div> <!-- END minwon_titme-->
+                                    </div> <!-- END Minwon_table_cell-->
+                                    <div class="minwon_table_cell">
+                                        <div class="notice_kind d_inline_block">
+                                            <span class="m_data1">기상</span>
+                                        </div> <!-- END minwon_reply-->
+
+                                        <div class="admin_kind d_inline_block">
+                                            <p class="m_data4">긴급재난문자 발송</p>
+                                        </div> <!--- END minwon_title-->
+
+
+                                        <div class="minwon_title d_inline_block">
+                                            <h6 class="m_data2">
+                                                <a href="/token/detail">
+                                                    광역버스노선의 확충이 필요합니다.
+                                                </a>
+                                            </h6>
+                                        </div> <!--- END minwon_title-->
+
+                                        <div class="minwon_time d_inline_block">
+                                            <i class="far fa-clock"></i>
+                                            <span class="m_data3">9:30 PM</span>
+                                        </div> <!-- END minwon_titme-->
+                                    </div> <!-- END Minwon_table_cell-->
+                                    <div class="admin_more_box">
+                                        <button class="more_btn" type="button">더보기 &gt;&gt;</button>
+                                    </div> <!-- END admin_more-box-->
+                                </div> <!-- END inner_left_box-->
+
+                            </div> <!-- END m_sc1_inner -->
                         </div>
-                        <div class="a4 a42">
-                          <div class="percent p_2">
-                            <span class="p_ing2"></span>
-                          </div>
-                          <p class="p_txt">후원/기부</p>
-                        </div>
-                        <div class="a4 a43">
-                          <div class="percent p_3">
-                            <span class="p_ing3"></span>
-                          </div>
-                          <p class="p_txt">댓글 참여</p>
-                        </div>
-                        <div class="a4 a44">
-                          <strong class="num num3">+142</strong>
-                          <p class="p_txt p_txt2">새 참여 도민</p>
-                        </div>
-                      </article> <!-- END admin_top_box-->
-
-                      <article class="admin_bottom_box">
-                        <h4 class="admin_title">경기내 상업시설 결제</h4>
-                        <div class="admin_b_img">
-                          <img src="/images/admin/left_bottom_menu.png"/>
-                        </div>
-                      </article>
-                    </div> <!-- END admin_left-->
-
-                    <div class="admin_right">
-                      <div class="m_sc1_inner">
-                        <div class="inner_left_box m_sc1_inner_box">
-                          <h4 class="admin_title">도 전역 긴급공지</h4>
-
-                          <div class="minwon_table_cell">
-                            <div class="notice_kind d_inline_block">
-                              <span class="m_data1">기상</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="admin_kind d_inline_block">
-                              <p class="m_data4">긴급재난문자 발송</p>
-                            </div> <!--- END minwon_title-->
-
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/token/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-
-                            <div class="minwon_time d_inline_block">
-                              <i class="far fa-clock"></i>
-                              <span class="m_data3">9:30 PM</span>
-                            </div> <!-- END minwon_titme-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-                            <div class="notice_kind d_inline_block">
-                              <span class="m_data1">기상</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="admin_kind d_inline_block">
-                              <p class="m_data4">긴급재난문자 발송</p>
-                            </div> <!--- END minwon_title-->
-
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/token/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-
-                            <div class="minwon_time d_inline_block">
-                              <i class="far fa-clock"></i>
-                              <span class="m_data3">9:30 PM</span>
-                            </div> <!-- END minwon_titme-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-                            <div class="notice_kind d_inline_block">
-                              <span class="m_data1">기상</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="admin_kind d_inline_block">
-                              <p class="m_data4">긴급재난문자 발송</p>
-                            </div> <!--- END minwon_title-->
-
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/token/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-
-                            <div class="minwon_time d_inline_block">
-                              <i class="far fa-clock"></i>
-                              <span class="m_data3">9:30 PM</span>
-                            </div> <!-- END minwon_titme-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="minwon_table_cell">
-                            <div class="notice_kind d_inline_block">
-                              <span class="m_data1">기상</span>
-                            </div> <!-- END minwon_reply-->
-
-                            <div class="admin_kind d_inline_block">
-                              <p class="m_data4">긴급재난문자 발송</p>
-                            </div> <!--- END minwon_title-->
-
-
-                            <div class="minwon_title d_inline_block">
-                              <h6 class="m_data2">
-                                <a href="/token/detail">
-                                  광역버스노선의 확충이 필요합니다.
-                                </a>
-                              </h6>
-                            </div> <!--- END minwon_title-->
-
-                            <div class="minwon_time d_inline_block">
-                              <i class="far fa-clock"></i>
-                              <span class="m_data3">9:30 PM</span>
-                            </div> <!-- END minwon_titme-->
-                          </div> <!-- END Minwon_table_cell-->
-                          <div class="admin_more_box">
-                            <button class="more_btn" type="button">더보기 &gt;&gt;</button>
-                          </div> <!-- END admin_more-box-->
-                        </div> <!-- END inner_left_box-->
-
-                      </div> <!-- END m_sc1_inner -->
-                    </div>
-                  </section> <!-- END s_content-->
+                    </section> <!-- END s_content-->
                 </div> <!-- END left_content-->
 
-              </div>
             </div>
+        </div>
 
-            <div class="grid3 side_bar"></div>
-          </div>
+        <div class="grid3 side_bar"></div>
+    </div>
 
-            <% include ./include/purple_line.ejs%>
+    <% include ./include/purple_line.ejs %>
 
-          <div class="admin_modal">
-            <div class="black_bg"></div>
-            <div class="modal_inner_box">
-              <button class="close_btn" type="button"><i class="fas fa-times"></i></button>
-              <section class="s_content sc1">
+    <div class="admin_modal">
+        <div class="black_bg"></div>
+        <div class="modal_inner_box">
+            <button class="close_btn" type="button"><i class="fas fa-times"></i></button>
+            <section class="s_content sc1">
 
                 <h3 class="s_title">민원 처리 지정</h3>
                 <div class="minwon_table_box">
-                  <table class="table ing_table">
-                    <thead>
-                    <tr>
-                      <th>구분</th>
-                      <th>관할 기관 지정</th>
-                      <th>제안 기간</th>
-                      <th>처리 담당자</th>
-                      <th>유선</th>
-                    </tr>
-                    </thead>
+                    <table class="table ing_table">
+                        <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>관할 기관 지정</th>
+                            <th>제안 기간</th>
+                            <th>처리 담당자</th>
+                            <th>유선</th>
+                        </tr>
+                        </thead>
 
-                    <tbody>
-                    <tr>
-                      <td>
+                        <tbody>
+                        <tr>
+                            <td>
                         <span class="b_date">
                           심사관리
                         </span>
-                      </td>
-                      <td>
-                        <div class="b_save">
-                          <select class="select_box">
-                            <option>도로교통부</option>
-                            <option>도로교통부</option>
-                            <option>도로교통부</option>
-                            <option>도로교통부</option>
-                            <option>도로교통부</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
+                                <div class="b_save">
+                                    <select class="select_box">
+                                        <option>도로교통부</option>
+                                        <option>도로교통부</option>
+                                        <option>도로교통부</option>
+                                        <option>도로교통부</option>
+                                        <option>도로교통부</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
                         <span class="b_present">
                           <input type="text" class="to">
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="b_admin">
                           이명옥 사무관
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="b_num">
                           4168
                         </span>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table> <!-- END minwon_table-->
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table> <!-- END minwon_table-->
                 </div> <!-- END minwon_table_box-->
-              </section> <!-- END sc1-->
+            </section> <!-- END sc1-->
 
-              <section class="s_content sc2">
+            <section class="s_content sc2">
                 <h3 class="s_title">민원 기본 정보</h3>
                 <div class="minwon_table_box">
-                  <table class="table minwon_table">
-                    <thead>
-                    <tr>
-                      <th>최초 제안자</th>
-                      <th>제안 등록</th>
-                      <th>조치 단계</th>
-                      <th>처리 담당자</th>
-                      <th>관할 부서</th>
-                      <th>응원참여</th>
-                    </tr>
-                    </thead>
+                    <table class="table minwon_table">
+                        <thead>
+                        <tr>
+                            <th>최초 제안자</th>
+                            <th>제안 등록</th>
+                            <th>조치 단계</th>
+                            <th>처리 담당자</th>
+                            <th>관할 부서</th>
+                            <th>응원참여</th>
+                        </tr>
+                        </thead>
 
-                    <tbody>
-                    <tr>
-                      <td>
+                        <tbody>
+                        <tr>
+                            <td>
                         <span class="first_user">
                           G014gh
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="create_block">
                           2018.08.14<br/>11:56:27
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="ing_block">
                           현장 관할자 이관
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="admin">
                           이명욱 사무관
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="admin_work">
                           관할 부서
                         </span>
-                      </td>
-                      <td>
+                            </td>
+                            <td>
                         <span class="block_date">
                           24명
                         </span>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table> <!-- END minwon_table-->
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table> <!-- END minwon_table-->
                 </div> <!-- END minwon_table_box-->
 
-              </section> <!-- END sc2-->
-              <section class="s_content sc3">
+            </section> <!-- END sc2-->
+            <section class="s_content sc3">
                 <h3 class="s_title">민원 상세</h3>
                 <div class="minwon_txt ">
-                  <p>수익성과 이용시민이 적다는 이유로 노선폐지 한다는 것을 알고...이의제기를 하고자 합니다.<br/>
-                    그 동안, 많치도 않는 버스에 배차시간도 길고...딱 정해진 출퇴근 시간에만 운행하였던 8361버스를 애용해왔던 시민들은 어떻게 하라는 것인지 묻고싶습니다.<br/>
-                    이번에 개통되는 지하철 9호선 노선과 8361 버스노선과는 전혀 상관없는데..<br/>
-                    개통시점에 맞추어 폐선을 한다는것은 다시 자가운전을 하라는 것인지요?<br/>
-                    아니면, 1시간 10분이상씩 걸리는 지하철 또는 2시간 걸리는 버스를 대안으로 이용하라는 것인지??<br/>
-                    차라리...수익 및 이용자 감소라고 하면, 이를 개선하기 위해...아래와 같이<br/>
-                    시민들이 자발적으로 대중교통을 이용할 수 있게, 더 노력 하신 후, 폐선결정을 내린것이 옳다고 사려됩니다.<br/>
-                  </p>
-                  <p>
-                    . 버스노선 및 정류장 홍보<br/>
-                    . 버스노선의 일부 조정<br/>
-                    . 버스 배차시간 확대<br/>
-                  </p>
-                  <p>
-                    8361버스를 이용하시는 분들은 몇 대 안되는 버스에, 배차시간도 길어, 버스 도착시간대를 미리 맞추어<br/>
-                    이용하시는 분들입니다.   운영수익성 면에서나 노선 효율 측면에서 전면적인 검토를 요청하는 바입니다.<br/>
-                    다시한번, 8361버스 폐지계획을 철회해주시기 바라며...  다시한번 검토 바랍니다. 감사합니다.
-                  </p>
+                    <p>수익성과 이용시민이 적다는 이유로 노선폐지 한다는 것을 알고...이의제기를 하고자 합니다.<br/>
+                        그 동안, 많치도 않는 버스에 배차시간도 길고...딱 정해진 출퇴근 시간에만 운행하였던 8361버스를 애용해왔던 시민들은 어떻게 하라는 것인지 묻고싶습니다.<br/>
+                        이번에 개통되는 지하철 9호선 노선과 8361 버스노선과는 전혀 상관없는데..<br/>
+                        개통시점에 맞추어 폐선을 한다는것은 다시 자가운전을 하라는 것인지요?<br/>
+                        아니면, 1시간 10분이상씩 걸리는 지하철 또는 2시간 걸리는 버스를 대안으로 이용하라는 것인지??<br/>
+                        차라리...수익 및 이용자 감소라고 하면, 이를 개선하기 위해...아래와 같이<br/>
+                        시민들이 자발적으로 대중교통을 이용할 수 있게, 더 노력 하신 후, 폐선결정을 내린것이 옳다고 사려됩니다.<br/>
+                    </p>
+                    <p>
+                        . 버스노선 및 정류장 홍보<br/>
+                        . 버스노선의 일부 조정<br/>
+                        . 버스 배차시간 확대<br/>
+                    </p>
+                    <p>
+                        8361버스를 이용하시는 분들은 몇 대 안되는 버스에, 배차시간도 길어, 버스 도착시간대를 미리 맞추어<br/>
+                        이용하시는 분들입니다. 운영수익성 면에서나 노선 효율 측면에서 전면적인 검토를 요청하는 바입니다.<br/>
+                        다시한번, 8361버스 폐지계획을 철회해주시기 바라며... 다시한번 검토 바랍니다. 감사합니다.
+                    </p>
                 </div>
-              </section> <!-- END sc3-->
-              <div class="admin_feedback_btn">
+            </section> <!-- END sc3-->
+            <div class="admin_feedback_btn">
                 <button class="feedback_btn">피드백하기</button>
-              </div>
             </div>
-          </div> <!-- END modal-->
+        </div>
+    </div> <!-- END modal-->
 
-      </main> <!-- END main-->
+</main> <!-- END main-->
 
-          <% include ./include/footer.ejs %>
+<% include ./include/footer.ejs %>
+
+<script>
+    $(".admin_complain_info").click(function(){
+        const id = this.id;
+        $.ajax({
+            url: '/post/getPostInfo',
+            data: {no: id},
+            method: 'POST'
+        }).done(function(result){
+            if(result.message === 'success'){
+
+            }else{
+
+            }
+        }).fail(function(err){
+            alert(err);
+        })
+    })
+</script>

@@ -1,5 +1,18 @@
 var express = require('express');
 var router = express.Router();
+const config = require('../config');
+const userModel = require('../db/model/user');
+const complainModel = require('../db/model/complain');
+const feedbackModel = require('../db/model/feedback');
+const TurndownService = require('turndown');
+const multer = require('multer');
+const path = require('path');
+const uploadDir = path.join(__dirname, '../public/images');
+const dateFormatConverter = require('../lib/dateFormatConverter');
+const auth = require('../lib/auth');
+var turndownService = new TurndownService();
+const markdown = require('markdown').markdown;
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -22,5 +35,10 @@ router.get('/alert', function(req, res, next){
 });
 
 router.get('/admin', function(req, res, next){
-    res.render('admin', {title: 'admin | WeBlockX'})
+    complainModel.findAll({
+        limit: 4,
+        order: [['no', 'DESC']]
+    }).then(complains => {
+        res.render('admin', {title: '민원 참여하기 | WeBlockX', complains: complains})
+    })
 });

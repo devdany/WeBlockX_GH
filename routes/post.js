@@ -118,6 +118,17 @@ router.post('/postComplain', function (req, res, next) {
     })
 });
 
+router.post('/getPostInfo', (req, res) => {
+    complainModel.findOne({
+        where:{
+            no: req.body.no
+        }
+    }).then(complain => {
+        //permlink받아서 포스트 정보 받아와서 데이터로 뿌려주면됨
+
+    })
+})
+
 
 router.post('/postFeedback', (req, res) => {
     userModel.findOne({
