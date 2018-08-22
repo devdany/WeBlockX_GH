@@ -1166,3 +1166,62 @@
     display: block;
   }
 }
+
+/////mobile
+.mobile_box{
+  position:relative;
+  .mobile_btn_box{
+    position:absolute;
+    top:30.5rem;
+    right:1rem;
+  }
+  .mobile_btn{
+    background-color: map_get($use-color, reply-c);
+    color: map_get($use-color, white-c);
+    font-family: light_font;
+    font-size: map_get($use-font, xsmall-f);
+    padding:0.3rem 0.8rem;
+    border-radius: 17px;
+  }
+}
+
+.mobile_modal{
+  display: none;
+  position:fixed;
+  left:0;
+  right:0;
+  top:50px;
+  text-align: center;
+  .black_bg{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .mobile_inner_box{
+    position:relative;
+    z-index: 999;
+    .mobile_submit_btn{
+      width:108px;
+      height: 35px;
+      position:absolute;
+      bottom:52px;
+      left:0;
+      right:0;
+      margin: auto;
+      color: #fff;
+      font-family: light_font;
+      font-size: map_get($use-font, xsmall3-f);
+      background-color: map_get($use-color, reply-c);
+      border-radius: 17px;
+    }
+  }
+  &.on{
+    display: block;
+  }
+}

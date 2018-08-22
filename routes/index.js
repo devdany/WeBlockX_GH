@@ -35,6 +35,7 @@ router.get('/alert', function(req, res, next){
 });
 
 router.get('/admin', function(req, res, next){
+
     complainModel.findAll({
         limit: 4,
         order: [['no', 'DESC']]
@@ -42,3 +43,13 @@ router.get('/admin', function(req, res, next){
         res.render('admin', {title: '민원 참여하기 | WeBlockX', complains: complains})
     })
 });
+
+
+router.get('/mobile1', function(req, res, next){
+    res.render('mobile/mobile1', {title: 'admin | WeBlockX'})
+});
+
+router.get('/mobile2', function(req, res, next){
+    res.render('mobile/mobile2', {title: 'admin | WeBlockX'})
+});
+
