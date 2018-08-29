@@ -1154,6 +1154,7 @@
   }
 
   .modal_inner_box{
+    overflow-y:auto;
     position:relative;
     z-index:999;
     background-color: #fff;
@@ -1261,3 +1262,4 @@
     display: block;
   }
 }
+

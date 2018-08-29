@@ -83,7 +83,7 @@
 
                                         <div class="form_box">
                                             <input type="checkbox" name="feedbackInfo" value="sns" id="sns_send"/>
-                                            <label for="sns_send">SNS문자 안내</label>
+                                            <label for="sns_send">SMS문자 안내</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -173,6 +173,7 @@
         $.ajax({
             url: '/post/postComplain',
             type: 'POST',
+            timeout: 2*60*60*1000,
             data: {title:title, content:content, type: type, feedbackInfo: feedbackInfo}
         }).done(function (result) {
             if(result.message === 'success') {

@@ -107,7 +107,7 @@ router.post('/postComplain', function (req, res, next) {
                 const payday = new Date();
                 payday.setDate(payday.getDate() + 8);
 
-                complainModel.create({
+                await complainModel.create({
                     permlink: permlink,
                     user_no: result.dataValues.no,
                     hate: 0,
@@ -120,7 +120,8 @@ router.post('/postComplain', function (req, res, next) {
                 }).then(() => {
                     res.send({message: 'success', permlink: permlink});
                 }).catch(err => {
-                    res.send('db save err: ' + err);
+                    res.send({message: 'success', permlink: permlink});
+                    //res.send('db save err: ' + err);
                 })
             }
         })

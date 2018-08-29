@@ -539,7 +539,8 @@
         $.ajax({
             url: '/post/getPostInfo',
             data: {no: id},
-            method: 'POST'
+            method: 'POST',
+            timeout: 2*60*60*1000,
         }).done(function(result){
             $(".minwon_txt").empty();
 
@@ -579,7 +580,8 @@
         $.ajax({
             url: '/post/postFeedback',
             data: {team: team, manager_no: manager, time: time, complain_no: complain_no},
-            method: 'POST'
+            method: 'POST',
+            timeout: 2*60*60*1000,
         }).done(function(result){
             if(result === 'success'){
                 alert('정상적으로 피드백이 등록되었습니다')
